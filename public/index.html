@@ -40,20 +40,111 @@
       <a href="#" class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0">Web Design</a>
       <a href="#" class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0">Affiliates</a>
     </div>
-
   </header>
 
+  <!-- Hero Section -->
+  <div class="relative bg-gray-100 overflow-hidden">
+    <div class="max-w-screen-xl mx-auto ">
+      <div class="relative z-10 pb-8 bg-gray-100 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+        <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
+          fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <polygon points="50,0 100,0 50,100 0,100" />
+        </svg>
+
+        <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
+          <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start">
+            <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
+              <div class="flex items-center justify-between w-full md:w-auto">
+
+
+              </div>
+              <div class="hidden md:block md:ml-10 md:pr-4">
+
+              </div>
+          </nav>
+        </div>
+
+        <!--
+          Mobile menu, show/hide based on menu open state.
+  
+          Entering: "duration-150 ease-out"
+            From: "opacity-0 scale-95"
+            To: "opacity-100 scale-100"
+          Leaving: "duration-100 ease-in"
+            From: "opacity-100 scale-100"
+            To: "opacity-0 scale-95"
+        -->
+        <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+          <div class="rounded-lg shadow-md">
+            <div class="rounded-lg bg-gray-100
+             shadow-xs overflow-hidden" role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
+              <div class="px-5 pt-4 flex items-center justify-between">
+                <div>
+                  <img class="h-8 w-auto" src="/img/logos/workflow-mark-on-white.svg" alt="" />
+                </div>
+                <div class="-mr-2">
+                  <button type="button"
+                    class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+                    aria-label="Close menu">
+                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="px-2 pt-2 pb-3">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <main class="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+          <div class="sm:text-center lg:text-left">
+            <h2
+              class="text-2xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-5xl">
+              Unmatched Web Hosting you can rely ON.
+              <br class="xl:hidden" />
+              <br>
+              <span class="text-indigo-600 text-3xl">Very EASY and affordable
+              </span>
+            </h2>
+            <p
+              class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
+              fugiat veniam occaecat fugiat aliqua.
+            </p>
+            <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+              <div class="rounded-md shadow">
+                <a href="#"
+                  class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+                  Get started
+                </a>
+              </div>
+              <div class="mt-3 sm:mt-0 sm:ml-3">
+
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+      <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+        src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
+        alt="" />
+    </div>
+  </div>
+
+  <!-- Tailwind CSS -->
   <!-- Domain Section Tailwind CSS -->
   <section class="text-gray-700 body-font">
     <div class="container px-5 mx-auto">
-
       <div class=" lg:w-4/5 sm:mx-auto -mx-2">
         <h3
           class="mt-6 text-3xl text-center leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
           Choose a Domain
         </h3>
-
-
         <form class="  mt-4 mb-0">
           <div class="flex justify-center p-3 w-full  mx-auto">
             <input
@@ -63,7 +154,6 @@
               class=" py-2 px-2 sm:py-3-8 sm:px-8 bg-blu-500 text-gray-100 font-semibold uppercase text-sm sm:text-base hover:bg-blu-600 rounded-r-md overflow-hidden">Search</button>
           </div>
         </form>
-
       </div>
       <div class=" md:pl-12 lg:pl-8">
         <div
@@ -136,7 +226,6 @@
               </ul> -->
         </div>
       </div>
-
     </div>
   </section>
 
@@ -205,7 +294,6 @@
               <path d="M23.9518 23.4514L27.5589 36.8072L29.9606 30.6989L37.1325 29.6683L23.9518 23.4514Z"
                 fill="#1F5AA6" />
             </svg>
-
             <span class="title-font font-semibold">Free Domain Forwarding</span>
           </div>
         </div>
@@ -237,7 +325,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </section>
 
@@ -338,56 +425,289 @@
     </div>
   </section>
 
+  <!-- Transferin to FH Section -->
+  <section class="text-gray-700 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="text-center mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Transfering to FidaHost is easy</h1>
+      </div>
+      <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+        <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center">
+          <div class="w-20 h-20 inline-flex items-center justify-center  mb-5 flex-shrink-0">
+            <svg width="65" height="64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22.03 21.176C10.275 21.176.752 30.758.752 42.588.751 54.418 10.391 64 22.031 64 33.67 64 43.31 54.418 43.31 42.588c0-11.83-9.523-21.412-21.28-21.412zm13.99 12.54h-4.702c-.823-2.367-1.998-4.614-3.292-6.625 3.292 1.301 6.114 3.667 7.995 6.624zm-13.99-6.27c1.764 1.656 3.292 3.785 4.233 6.27h-8.582c1.175-2.485 2.586-4.614 4.35-6.27zm-5.878-.355c-1.41 2.01-2.586 4.14-3.291 6.624H8.158c1.881-2.957 4.703-5.323 7.994-6.624zM6.042 46.61c-.353-1.302-.47-2.603-.47-4.023 0-1.42.235-2.84.587-4.14h5.526a23.591 23.591 0 00-.353 4.14c0 1.301.118 2.72.235 4.022H6.042zm1.998 4.731h4.703a25.917 25.917 0 003.41 6.743 16.279 16.279 0 01-8.113-6.743zm13.99 6.388c-1.88-1.656-3.291-3.904-4.35-6.506h8.7c-.94 2.602-2.468 4.85-4.35 6.506zm-5.643-11.12a22.261 22.261 0 01-.352-4.022c0-1.42.117-2.84.352-4.14h11.287c.235 1.3.352 2.72.352 4.14 0 1.301-.117 2.72-.352 4.022H16.387zm11.64 11.475a25.917 25.917 0 003.409-6.743h4.702a16.28 16.28 0 01-8.112 6.743zm10.58-15.497c0 1.42-.235 2.72-.47 4.022h-5.643c.235-1.301.235-2.602.235-4.022a23.6 23.6 0 00-.353-4.14h5.526c.47 1.3.705 2.72.705 4.14z"
+                fill="#1F5AA6" />
+              <path
+                d="M45.31 34.07c.94 2.603 1.527 5.442 1.527 8.4 9.876-1.775 17.518-10.53 17.518-21.058C64.355 9.582 54.832 0 43.075 0 32.612 0 23.912 7.571 22.15 17.627c1.646 0 3.174.118 4.703.473.117-.237.117-.592.235-.828h5.643c-.118.828-.235 1.774-.235 2.72 1.646.829 3.291 1.775 4.702 2.84 0-.474-.117-.947-.117-1.42 0-1.42.117-2.839.352-4.14h11.286a23.6 23.6 0 01.353 4.14c0 1.301-.117 2.721-.352 4.022H39.9c1.41 1.42 2.587 2.958 3.527 4.732h3.997a20.625 20.625 0 01-2.116 3.904zM33.787 12.54h-4.703c1.881-2.958 4.703-5.324 7.995-6.625-1.294 2.011-2.47 4.259-3.292 6.625zm5.055 0c1.058-2.485 2.469-4.614 4.232-6.27 1.764 1.656 3.292 3.785 4.233 6.27h-8.465zm20.221 4.732c.353 1.301.588 2.72.588 4.14 0 1.42-.235 2.721-.47 4.022h-5.643c.235-1.301.235-2.602.235-4.022a23.6 23.6 0 00-.353-4.14h5.643zM49.071 5.915c3.292 1.301 6.114 3.667 7.995 6.625h-4.703c-.823-2.366-1.881-4.614-3.292-6.625zm3.41 24.251h4.702a16.279 16.279 0 01-8.112 6.743 25.915 25.915 0 003.41-6.743zM7.57 17.272h11.168V9.937H7.57V6.743L.869 13.604l6.7 6.862v-3.194z"
+                fill="#63B0F2" />
+              <path d="M55.185 46.492H44.133v7.453h11.052v3.075l6.818-6.861-6.818-6.743v3.076z" fill="#1F5AA6" /></svg>
+          </div>
+          <div class="flex-grow">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Free Domain Transfer</h2>
+            <p class="leading-relaxed text-base">Already have your domain name? Transfer it over to FidaHost for free
+              and set up your website on our powerful servers
+              with 99.9% uptime, guaranteed.</p>
+            <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center">
+          <div class="w-20 h-20 inline-flex items-center justify-center  mb-5 flex-shrink-0">
+            <svg width="74" height="64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M27.19 17.463v8.222h46.362v-8.222H27.19zm8.353 6.527h-1.934V21.7h1.934v2.29zm4.734 0h-1.934V21.7h1.934v2.29zm4.734 0h-1.934V21.7h1.934v2.29zm19.95-.126h-8.183v-2.29h8.182v2.29zM73.552 27.975V64H27.19V39.964h7.875l4.108 4.168 7.58-7.603-7.58-7.615-4.12 4.18H27.19v-5.12h46.362z"
+                fill="#1F5AA6" />
+              <path
+                d="M47.094 10.512v4.66h-22.18v17.921h-3.539l-4.154-4.18-7.556 7.616 7.556 7.603 4.143-4.168h3.55v6.573H.72V10.512h46.374zM47.094 0H.72v8.222h46.374V0zM9.084 6.539H7.15v-2.29h1.935v2.29zm4.735 0h-1.935v-2.29h1.935v2.29zm4.734 0h-1.935v-2.29h1.935v2.29zM38.502 6.4H30.32v-2.29h8.182v2.29z"
+                fill="#63B0F2" />
+              <path
+                d="M43.532 36.529l-4.348 4.362-1.604-1.625 1.593-1.592H17.244l1.593 1.592-1.616 1.626-4.335-4.363 4.335-4.375 1.616 1.627-1.593 1.603h21.93L37.58 33.78l1.604-1.627 4.348 4.375z"
+                fill="#1F5AA6" /></svg>
+          </div>
+          <div class="flex-grow">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Free Website Migration</h2>
+            <p class="leading-relaxed text-base">Migrating your website from one host to another can be daunting, but
+              we’ll help you every step of the way to ensure your
+              website stays online and available.</p>
+            <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center">
+          <div class="w-20 h-20 inline-flex items-center justify-center  mb-5 flex-shrink-0">
+            <svg width="69" height="64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M34.612.005c-.34.012-.686.049-1.017.122-2.646.58-4.696 2.997-4.844 6.019-.337 8.942-1.487 14.24-6.999 22.225-.688-1.104-1.894-1.852-3.27-1.852H4.534c-2.12 0-3.875 1.766-3.875 3.899V58.49c0 2.133 1.755 3.9 3.875 3.9h13.95c1.337 0 2.523-.702 3.22-1.755.807.653 1.553 1.24 2.326 1.706 1.278.77 2.722 1.232 4.698 1.438 3.952.411 10.437.107 25.405.17.352-.008.7-.138.969-.365 3.012-2.473 4.32-4.84 4.916-7.506.293-.091.558-.272.75-.512 2.253-2.833 3.068-6.101 2.544-8.92.215-.1.408-.251.557-.438 2.63-3.106 3.162-7.083 2.228-10.089 1.607-1.913 2.272-4.157 2.034-6.238-.379-2.635-2.28-5.283-4.698-5.703H43.476c1.193-7.898.402-15.157-2.252-19.86C39.79 1.778 37.7.357 35.629.053a5.446 5.446 0 00-1.017-.05zm3.923 5.849c2.267 4.016 3.208 11.529 1.672 19.593-.171.899.615 1.854 1.525 1.852h21.264c1.163.6 1.911 1.634 2.058 2.924.143 1.249-.362 2.718-1.622 4.094h-9.319c-.818 0-1.572.736-1.572 1.56 0 .824.754 1.57 1.573 1.56h9.124c.465 1.722.108 4.015-1.429 6.238h-7.695c-.82 0-1.572.735-1.572 1.56 0 .824.753 1.57 1.572 1.56h6.024c.465 1.722.108 4.014-1.429 6.238h-4.596c-.818 0-1.572.735-1.572 1.56 0 .823.754 1.57 1.573 1.559h2.73c-.477 1.669-1.352 2.948-3.366 4.679-14.405-.05-21.084.179-24.436-.17-1.709-.179-2.511-.431-3.415-.975-.814-.49-1.81-1.355-3.27-2.535v-24.32c7.203-9.217 9.138-16.967 9.494-26.563 1.037-4.779 5.223-3.46 6.684-.414zM4.533 29.638h13.95c.456 0 .775.32.775.78V58.49c0 .46-.319.78-.775.78H4.533c-.456 0-.775-.32-.775-.78V30.418c0-.46.32-.78.775-.78z"
+                fill="#63B0F2" /></svg>
+          </div>
+          <div class="flex-grow">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Money-back Guarantee</h2>
+            <p class="leading-relaxed text-base">Try us and love us, or get a refund within 30 days of signing up. Your
+              satisfaction is our top priority.</p>
+            <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Why Us Section -->
+  <section class="text-gray-700 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900">Why us? </h1>
+        <h2 class="text-sm text-blue-400 tracking-widest font-medium title-font mb-1">best choice for low number
+          visitors</h2>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="p-1 md:w-2/4 lg:w-1/3">
+          <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+            <div class="flex items-center mb-3">
+              <div
+                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-400 text-white flex-shrink-0">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20.25 13.2075V11.25C20.25 9.06196 19.3808 6.96354 17.8336 5.41637C16.2864 3.86919 14.188 3 12 3C9.81193 3 7.71351 3.86919 6.16634 5.41637C4.61916 6.96354 3.74997 9.06196 3.74997 11.25V13.2075C2.92849 13.6304 2.27277 14.3169 1.88793 15.1569C1.50308 15.9968 1.41138 16.9417 1.62753 17.84C1.84368 18.7383 2.35515 19.5381 3.07998 20.111C3.80481 20.684 4.70102 20.9971 5.62497 21H5.99997C6.39779 21 6.77932 20.842 7.06063 20.5607C7.34193 20.2794 7.49997 19.8978 7.49997 19.5V14.25C7.49997 13.8522 7.34193 13.4706 7.06063 13.1893C6.77932 12.908 6.39779 12.75 5.99997 12.75H5.62497H5.24997V11.25C5.24997 9.45979 5.96112 7.7429 7.22699 6.47703C8.49287 5.21116 10.2098 4.5 12 4.5C13.7902 4.5 15.5071 5.21116 16.7729 6.47703C18.0388 7.7429 18.75 9.45979 18.75 11.25V12.75H18.375H18C17.6021 12.75 17.2206 12.908 16.9393 13.1893C16.658 13.4706 16.5 13.8522 16.5 14.25V19.5H14.25V18.75C14.25 18.5511 14.1709 18.3603 14.0303 18.2197C13.8896 18.079 13.6989 18 13.5 18H12C11.8011 18 11.6103 18.079 11.4696 18.2197C11.329 18.3603 11.25 18.5511 11.25 18.75V20.25C11.25 20.4489 11.329 20.6397 11.4696 20.7803C11.6103 20.921 11.8011 21 12 21H18.375C19.2989 20.9971 20.1951 20.684 20.9199 20.111C21.6448 19.5381 22.1563 18.7383 22.3724 17.84C22.5886 16.9417 22.4969 15.9968 22.112 15.1569C21.7272 14.3169 21.0714 13.6304 20.25 13.2075V13.2075ZM5.99997 14.25V19.5H5.62497C4.92877 19.5 4.26109 19.2234 3.76881 18.7312C3.27653 18.2389 2.99997 17.5712 2.99997 16.875C2.99997 16.1788 3.27653 15.5111 3.76881 15.0188C4.26109 14.5266 4.92877 14.25 5.62497 14.25H5.99997ZM18.375 19.5H18V14.25H18.375C19.0712 14.25 19.7388 14.5266 20.2311 15.0188C20.7234 15.5111 21 16.1788 21 16.875C21 17.5712 20.7234 18.2389 20.2311 18.7312C19.7388 19.2234 19.0712 19.5 18.375 19.5V19.5Z">
+                  </path>
+                </svg>
+              </div>
+              <h2 class="text-gray-900 text-base title-font font-semibold">24/7 Proffesional support</h2>
+            </div>
+            <div class="flex-grow">
+              <p class="leading-relaxed text-base">Blue 4ottle crucifix vinyl post-ironic four dollar toast vegan
+                taxidermy. Gastropub indxgo juice poutine.</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-1 md:w-2/4 lg:w-1/3">
+          <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+            <div class="flex items-center mb-3">
+              <div
+                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-400 text-white flex-shrink-0">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M15.9756 17.2432L18.6422 19.9099C19.1467 20.4144 19.7954 20.4144 20.2999 19.9099L23.0386 17.2432C24.0476 16.2342 22.8224 14.9369 21.7413 16.018L20.2999 17.4595V4.41441C20.2999 4.05405 20.0116 3.76576 19.5792 3.76576H10.1377V5.35135H18.7143V17.5315L17.2008 16.018C16.1918 14.9369 14.8945 16.2342 15.9756 17.2432ZM0.984586 6.79279L3.65125 4.12612C4.15576 3.62162 4.80441 3.62162 5.38098 4.12612L8.04765 6.79279C9.05666 7.87387 7.83143 9.09909 6.75035 8.09008L5.30891 6.57657V18.7568H13.8855V20.3423H4.44405C4.01161 20.3423 3.72332 19.982 3.72332 19.6216V6.57657L2.20981 8.09008C1.2008 9.09909 -0.0964954 7.87387 0.984586 6.79279Z">
+                  </path>
+                </svg>
+              </div>
+              <h2 class="text-gray-900 text-lg title-font font-semibold">99.99% Uptime</h2>
+            </div>
+            <div class="flex-grow">
+              <p class="leading-relaxed text-base">Blue 4ottle crucifix vinyl post-ironic four dollar toast vegan
+                taxidermy. Gastropub indxgo juice poutine.</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-1 md:w-2/4 lg:w-1/3">
+          <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+            <div class="flex items-center mb-3">
+              <div
+                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-400 text-white flex-shrink-0">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 1.5C8.53123 1.5 5.70935 4.25156 5.70935 7.72031C5.70935 8.48906 5.87341 9.32813 6.16873 10.0828H6.16404L6.19216 10.1391C6.2156 10.1906 6.23904 10.2422 6.26248 10.2938L12 22.5L17.7093 10.3547L17.7375 10.2984C17.7609 10.2469 17.789 10.1953 17.8125 10.1391L17.8312 10.0875C18.1359 9.33281 18.2906 8.53594 18.2906 7.72969C18.2906 4.25156 15.4687 1.5 12 1.5ZM12 9.69844C10.7859 9.69844 9.80154 8.71406 9.80154 7.5C9.80154 6.28594 10.7859 5.30156 12 5.30156C13.214 5.30156 14.1984 6.28594 14.1984 7.5C14.1984 8.71406 13.214 9.69844 12 9.69844Z">
+                  </path>
+                </svg>
+              </div>
+              <h2 class="text-gray-900 text-lg title-font font-semibold">Location choice</h2>
+            </div>
+            <div class="flex-grow">
+              <p class="leading-relaxed text-base">Blue 4ottle crucifix vinyl post-ironic four dollar toast vegan
+                taxidermy. Gastropub indxgo juice poutine.</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-1 md:w-2/4 lg:w-1/3">
+          <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+            <div class="flex items-center mb-3">
+              <div
+                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-400 text-white flex-shrink-0">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M22.9569 12.0575C23.0548 12.1569 23.1276 12.2782 23.1694 12.4113C23.2111 12.5444 23.2205 12.6856 23.1969 12.8231L22.5993 16.4711C22.5692 16.6512 22.4837 16.8174 22.3546 16.9465C22.2255 17.0756 22.0593 17.1611 21.8793 17.1911C21.8329 17.195 21.7864 17.195 21.7401 17.1911C21.4959 17.1913 21.2615 17.0956 21.0873 16.9247L20.4009 16.2383L15.8073 20.8415C15.7003 20.9485 15.5732 21.0335 15.4334 21.0914C15.2936 21.1493 15.1438 21.1791 14.9925 21.1791C14.8411 21.1791 14.6913 21.1493 14.5515 21.0914C14.4117 21.0335 14.2846 20.9485 14.1777 20.8415L11.8473 18.5111L6.92725 23.4239C6.71115 23.64 6.41806 23.7614 6.11245 23.7614C5.80684 23.7614 5.51375 23.64 5.29765 23.4239C5.08155 23.2078 4.96015 22.9147 4.96015 22.6091C4.96015 22.3035 5.08155 22.0104 5.29765 21.7943L11.0265 16.0679C11.1334 15.9609 11.2605 15.876 11.4003 15.818C11.5401 15.7601 11.6899 15.7303 11.8413 15.7303C11.9926 15.7303 12.1424 15.7601 12.2822 15.818C12.422 15.876 12.5491 15.9609 12.6561 16.0679L14.9865 18.3983L18.7737 14.6111L18.0801 13.9223C17.9874 13.8327 17.9152 13.7241 17.8684 13.6039C17.8216 13.4838 17.8013 13.355 17.8089 13.2263C17.8224 13.0285 17.9022 12.8411 18.0355 12.6943C18.1688 12.5475 18.3477 12.45 18.5433 12.4175L22.1913 11.8151C22.2388 11.807 22.287 11.803 22.3353 11.8031C22.5679 11.8025 22.7914 11.8939 22.9569 12.0575V12.0575ZM5.34325 18.8567L6.20725 18.0023L7.04005 17.1695C7.22512 16.9909 7.33757 16.7501 7.35574 16.4936C7.37391 16.237 7.29651 15.9828 7.13845 15.7799C7.04882 15.6708 6.93737 15.5817 6.81126 15.5182C6.68514 15.4547 6.54714 15.4183 6.40612 15.4113C6.2651 15.4043 6.12417 15.4268 5.99238 15.4775C5.86059 15.5282 5.74085 15.6058 5.64085 15.7055L4.76725 16.5623C3.76227 15.2925 3.13217 13.7672 2.94805 12.1583H4.23445C4.50306 12.1583 4.76067 12.0516 4.95061 11.8617C5.14055 11.6717 5.24725 11.4141 5.24725 11.1455C5.24725 10.8769 5.14055 10.6193 4.95061 10.4294C4.76067 10.2394 4.50306 10.1327 4.23445 10.1327H2.96005C3.14056 8.52505 3.76647 6.99976 4.76725 5.72871L5.63125 6.59271C5.73125 6.69239 5.85099 6.77006 5.98278 6.82074C6.11457 6.87141 6.2555 6.89397 6.39652 6.88696C6.53754 6.87996 6.67554 6.84354 6.80166 6.78005C6.92777 6.71657 7.03922 6.62741 7.12885 6.51831C7.28623 6.31558 7.36323 6.06189 7.34507 5.80588C7.32691 5.54988 7.21487 5.30959 7.03045 5.13111L6.20725 4.29831C7.47696 3.29322 9.00237 2.66311 10.6113 2.47911V3.70071C10.6113 3.96932 10.718 4.22693 10.9079 4.41687C11.0978 4.60681 11.3554 4.71351 11.6241 4.71351C11.8927 4.71351 12.1503 4.60681 12.3402 4.41687C12.5301 4.22693 12.6369 3.96932 12.6369 3.70071V2.47911L12.9729 2.52471C14.7874 2.82388 16.4599 3.69208 17.7489 5.00391L17.7873 5.04231C18.9357 6.1674 19.7463 7.59154 20.1273 9.15351L20.1393 9.20631C20.1984 9.47916 20.3595 9.71911 20.5897 9.87705C20.8199 10.035 21.1018 10.099 21.3777 10.0559C21.5267 10.0277 21.6684 9.96938 21.7942 9.88461C21.9201 9.79985 22.0273 9.69038 22.1095 9.56287C22.1916 9.43535 22.247 9.29245 22.2722 9.14286C22.2974 8.99326 22.2919 8.84011 22.2561 8.69271C21.8759 7.04701 21.1187 5.51208 20.0442 4.20887C18.9697 2.90566 17.6073 1.86978 16.0642 1.18285C14.5212 0.49592 12.8397 0.176708 11.1523 0.250369C9.46482 0.32403 7.81755 0.788552 6.34023 1.60733C4.86291 2.42611 3.59591 3.57677 2.63908 4.96865C1.68224 6.36054 1.0617 7.9556 0.826369 9.62817C0.591034 11.3007 0.747327 13.0051 1.28293 14.607C1.81854 16.2089 2.71883 17.6645 3.91285 18.8591C4.10303 19.0481 4.36041 19.154 4.62855 19.1536C4.89669 19.1531 5.15371 19.0464 5.34325 18.8567ZM16.6641 6.13671C16.4963 5.96701 16.2714 5.86587 16.0331 5.853C15.7948 5.84014 15.5603 5.91647 15.3753 6.06711L11.9673 8.79591C11.487 8.73043 10.9982 8.81311 10.5661 9.0329C10.1341 9.25268 9.77946 9.59909 9.5496 10.0258C9.31973 10.4526 9.22559 10.9393 9.27977 11.421C9.33395 11.9027 9.53386 12.3563 9.85279 12.7214C10.1717 13.0864 10.5945 13.3454 11.0645 13.4637C11.5346 13.582 12.0295 13.554 12.4833 13.3835C12.937 13.2129 13.3279 12.908 13.6036 12.5094C13.8794 12.1107 14.0269 11.6374 14.0265 11.1527C14.0258 11.0451 14.0178 10.9376 14.0025 10.8311L16.7337 7.44231C16.886 7.25648 16.9632 7.02025 16.9499 6.7803C16.9365 6.54034 16.8337 6.31411 16.6617 6.14631L16.6641 6.13671Z">
+                  </path>
+                </svg>
+              </div>
+              <h2 class="text-gray-900 text-base title-font font-semibold">Optimized for Speed &amp; Performance</h2>
+            </div>
+            <div class="flex-grow">
+              <p class="leading-relaxed text-base">Blue 4ottle crucifix vinyl post-ironic four dollar toast vegan
+                taxidermy. Gastropub indxgo juice poutine.</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-1 md:w-2/4 lg:w-1/3">
+          <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+            <div class="flex items-center mb-3">
+              <div
+                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-400 text-white flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg>
+              </div>
+              <h2 class="text-gray-900 text-lg title-font font-semibold">Live Monitoring</h2>
+            </div>
+            <div class="flex-grow">
+              <p class="leading-relaxed text-base">Blue 4ottle crucifix vinyl post-ironic four dollar toast vegan
+                taxidermy. Gastropub indxgo juice poutine.</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-1 md:w-2/4 lg:w-1/3">
+          <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+            <div class="flex items-center mb-3">
+              <div
+                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-400 text-white flex-shrink-0">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.1314 10.8188L16.6689 7.91254H7.31265L5.8689 10.8188V10.875H18.1314V10.8188Z"></path>
+                  <path
+                    d="M6.7314 12.1312C7.0689 12.1312 7.3314 11.9437 7.4814 11.6812C7.6314 11.9437 7.91265 12.1312 8.2314 12.1312C8.5689 12.1312 8.8314 11.9437 8.9814 11.6812C9.1314 11.9437 9.4314 12.1312 9.75015 12.1312C10.0876 12.1312 10.3314 11.9437 10.5189 11.6812C10.6126 11.9437 10.9314 12.1312 11.2689 12.1312C11.6064 12.1312 11.8126 11.9437 12.0189 11.6812C12.1126 11.9437 12.4314 12.1312 12.7689 12.1312C13.1064 12.1312 13.3126 11.9437 13.5189 11.6812C13.6126 11.9437 13.9314 12.1312 14.2689 12.1312C14.6064 12.1312 14.9251 11.9437 15.0189 11.6812C15.1126 11.9437 15.4314 12.1312 15.7501 12.1312C16.0876 12.1312 16.3501 11.9437 16.5001 11.6812C16.6501 11.9437 16.9314 12.1312 17.2501 12.1312C17.7189 12.1312 18.0939 11.7562 18.1126 11.2875H5.8689C5.88765 11.7562 6.26265 12.1312 6.7314 12.1312Z">
+                  </path>
+                  <path
+                    d="M17.0252 12.5437C16.8564 12.5062 16.6876 12.4312 16.5376 12.3375C16.5001 12.3562 16.4814 12.375 16.4627 12.375V17.3812H7.53765V12.375C7.5189 12.3562 7.50015 12.3562 7.50015 12.3375C7.35015 12.45 7.1814 12.525 6.9939 12.5625V18.1312H17.0252V17.3812V12.5437Z">
+                  </path>
+                  <path
+                    d="M22.8751 2.45624H1.12505C0.562549 2.45624 0.112549 2.90624 0.112549 3.46874V5.79374V20.5312C0.112549 21.0937 0.562549 21.5437 1.12505 21.5437H22.8751C23.4376 21.5437 23.8876 21.0937 23.8876 20.5312V5.79374V3.46874C23.8688 2.90624 23.4188 2.45624 22.8751 2.45624ZM6.3938 3.61874C6.52505 3.48749 6.71255 3.41249 6.90005 3.41249C7.08755 3.41249 7.27505 3.48749 7.4063 3.61874C7.53755 3.74999 7.61255 3.93749 7.61255 4.12499C7.61255 4.31249 7.53755 4.49999 7.4063 4.63124C7.27505 4.76249 7.08755 4.83749 6.90005 4.83749C6.6938 4.83749 6.52505 4.76249 6.3938 4.61249C6.26255 4.49999 6.18755 4.31249 6.18755 4.12499C6.18755 3.93749 6.26255 3.74999 6.3938 3.61874ZM3.9938 3.61874C4.12505 3.48749 4.31255 3.41249 4.50005 3.41249C4.68755 3.41249 4.87505 3.48749 5.0063 3.61874C5.13755 3.74999 5.21255 3.93749 5.21255 4.12499C5.21255 4.31249 5.13755 4.49999 5.0063 4.63124C4.87505 4.78124 4.68755 4.85624 4.50005 4.85624C4.2938 4.85624 4.12505 4.78124 3.9938 4.63124C3.86255 4.49999 3.7688 4.31249 3.7688 4.12499C3.7688 3.93749 3.86255 3.74999 3.9938 3.61874ZM1.5938 3.61874C1.72505 3.48749 1.91255 3.41249 2.10005 3.41249C2.28755 3.41249 2.47505 3.48749 2.6063 3.61874C2.73755 3.74999 2.81255 3.93749 2.81255 4.12499C2.81255 4.31249 2.73755 4.49999 2.6063 4.63124C2.47505 4.76249 2.28755 4.83749 2.10005 4.83749C1.8938 4.83749 1.72505 4.76249 1.5938 4.61249C1.46255 4.49999 1.3688 4.31249 1.3688 4.12499C1.3688 3.93749 1.46255 3.74999 1.5938 3.61874ZM22.5563 20.2312H1.42505V5.79374H22.5563V20.2312Z">
+                  </path>
+                </svg>
+              </div>
+              <h2 class="text-gray-900 text-lg title-font font-semibold">CMS &amp; E-commerce friendly hosting</h2>
+            </div>
+            <div class="flex-grow">
+              <p class="leading-relaxed text-base">Blue 4ottle crucifix vinyl post-ironic four dollar toast vegan
+                taxidermy. Gastropub indxgo juice poutine.</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-1 md:w-2/4 lg:w-1/3">
+          <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+            <div class="flex items-center mb-3">
+              <div
+                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-400 text-white flex-shrink-0">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M13.6719 3.0049C14.8108 3.0049 15.9501 3.0049 17.089 3.0049C17.8339 3.0049 18.6241 2.96601 19.2376 3.10738C20.7242 3.44969 21.8848 4.19737 22.6856 5.22814C23.1104 5.77524 23.4791 6.4178 23.7086 7.15427C23.8116 7.48537 23.8779 7.831 23.9439 8.19941C24.1054 9.10055 23.8856 10.0628 23.6881 10.7299C23.0978 12.7256 21.899 14.0628 20.0459 14.7871C18.6362 15.3383 16.2744 15.1543 14.3369 15.1561C14.3369 15.1526 14.3369 15.1492 14.3369 15.1457C14.5278 14.4389 14.7188 13.7319 14.9097 13.025C15.0138 12.6776 15.0586 12.3106 15.227 12.0312C15.3845 11.77 15.6185 11.5515 15.8818 11.396C16.2812 11.1598 16.9506 11.2012 17.5904 11.2013C17.7745 11.1978 17.9588 11.1945 18.1429 11.191C18.8203 11.0687 19.3289 10.7389 19.6365 10.2485C19.7684 10.0383 19.8656 9.78096 19.9333 9.51083C20.0564 9.01944 19.9079 8.50616 19.7593 8.16858C19.1115 6.69652 17.6452 6.94528 15.6056 6.94948C14.8178 9.88274 14.0298 12.817 13.2422 15.7503C12.9063 16.8688 12.8209 18.3025 11.9223 18.8649C11.4938 19.1331 10.7796 19.0903 10.0705 19.0903C9.47364 19.0903 8.8768 19.0903 8.27995 19.0903C9.31668 15.2111 10.3536 11.3306 11.3903 7.45138C11.6051 6.64554 11.82 5.83935 12.0348 5.03351C12.1937 4.50131 12.2682 3.97804 12.5668 3.59912C12.7527 3.3635 13.0465 3.16589 13.365 3.06639C13.4673 3.04589 13.5696 3.02539 13.6719 3.0049V3.0049ZM5.77344 6.95965C7.36252 6.95965 8.95195 6.95965 10.541 6.95965C10.541 6.96315 10.541 6.96648 10.541 6.96998C10.3706 7.61185 10.2001 8.25407 10.0295 8.89611C9.76339 9.78797 9.69858 10.429 8.88363 10.7812C8.31797 11.0258 7.27248 10.9146 6.49975 10.9144C6.29864 10.9144 6.09735 10.9144 5.89624 10.9144C4.90944 11.0791 4.26564 11.6249 4.03405 12.5333C3.93788 12.9104 3.98255 13.3668 4.0852 13.691C4.35341 14.5368 4.92801 15.007 5.88591 15.1662C6.5304 15.2735 7.42383 14.997 7.84007 15.3201C8.20865 15.6061 8.15644 16.0225 8.01402 16.4982C7.77875 17.3657 7.54331 18.2332 7.30804 19.1005C6.46576 19.1101 5.51434 19.1625 4.80153 19.0083C2.57198 18.5261 1.12199 17.1933 0.361176 15.2381C0.0113363 14.339 -0.131088 12.9111 0.146226 11.8057C0.306343 11.1681 0.494663 10.5425 0.790896 10.0334C1.55329 8.72286 2.58547 7.85553 4.0852 7.27725C4.41893 7.14867 4.79557 7.08035 5.17992 7.01097C5.3777 6.99381 5.57566 6.97681 5.77344 6.95965V6.95965Z">
+                  </path>
+                </svg>
+              </div>
+              <h2 class="text-gray-900 text-base title-font font-semibold">cPanel Control Panel</h2>
+            </div>
+            <div class="flex-grow">
+              <p class="leading-relaxed text-base">Blue 4ottle crucifix vinyl post-ironic four dollar toast vegan
+                taxidermy. Gastropub indxgo juice poutine.</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-1 md:w-2/4 lg:w-1/3">
+          <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+            <div class="flex items-center mb-3">
+              <div
+                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-400 text-white flex-shrink-0">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M10.344 6.16802H11.136V11.352C11.52 11.64 11.88 11.976 12.192 12.384C12.384 12.12 12.6 11.904 12.84 11.688V6.16802H13.632C13.872 6.16802 13.992 5.90402 13.872 5.71202L12.24 3.45602C12.12 3.31202 11.88 3.31202 11.784 3.45602L10.128 5.71202C9.98401 5.90402 10.104 6.16802 10.344 6.16802Z">
+                  </path>
+                  <path
+                    d="M15.4801 6.16802H16.2721V10.344C16.3201 10.344 16.3441 10.344 16.3921 10.344C16.9441 10.344 17.4721 10.44 18.0001 10.584V6.16802H18.7921C19.0321 6.16802 19.1521 5.90402 19.0321 5.71202L17.3761 3.45602C17.2561 3.31202 17.0401 3.31202 16.9201 3.45602L15.2641 5.71202C15.0961 5.90402 15.2401 6.16802 15.4801 6.16802Z">
+                  </path>
+                  <path
+                    d="M5.23203 6.16802H6.02403V10.728C6.55203 10.512 7.12803 10.368 7.75203 10.344V6.16802H8.54403C8.78403 6.16802 8.90403 5.90402 8.78403 5.71202L7.12803 3.45602C7.00803 3.31202 6.76803 3.31202 6.67203 3.45602L5.01603 5.71202C4.84803 5.90402 4.99203 6.16802 5.23203 6.16802Z">
+                  </path>
+                  <path
+                    d="M10.896 13.032C10.176 12.24 9.14398 11.76 8.01598 11.76C6.33598 11.76 4.91998 12.816 4.36798 14.304C4.19998 14.28 4.00798 14.256 3.81598 14.256C2.03998 14.256 0.599976 15.696 0.599976 17.472C0.599976 19.248 2.03998 20.664 3.81598 20.664H8.87998C8.06398 19.848 7.58398 18.696 7.58398 17.472C7.55998 15.36 8.97598 13.584 10.896 13.032Z">
+                  </path>
+                  <path
+                    d="M20.4481 14.76C20.3521 14.76 20.2561 14.76 20.1841 14.784C19.7761 13.032 18.2401 11.76 16.3681 11.76C14.6881 11.76 13.2721 12.816 12.7201 14.304C12.5521 14.28 12.3601 14.256 12.1921 14.256C10.4161 14.256 8.97607 15.696 8.97607 17.472C8.97607 19.248 10.4161 20.688 12.1921 20.688H20.4721C22.1041 20.688 23.4241 19.368 23.4241 17.736C23.4001 16.08 22.0801 14.76 20.4481 14.76Z">
+                  </path>
+                </svg>
+              </div>
+              <h2 class="text-gray-900 text-lg title-font font-semibold">Beyond Experienced</h2>
+            </div>
+            <div class="flex-grow">
+              <p class="leading-relaxed text-base">Blue 4ottle crucifix vinyl post-ironic four dollar toast vegan
+                taxidermy. Gastropub indxgo juice poutine.</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-1 md:w-2/4 lg:w-1/3">
+          <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+            <div class="flex items-center mb-3">
+              <div
+                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-400 text-white flex-shrink-0">
 
-
-
-
-
-
-
-
-
-  <!-- Full width column -->
-  <div class="flex mb-4">
-    <div class="flex-1 bg-gray-500 h-12"></div>
-  </div>
-
-  <!-- Five columns -->
-  <div class="flex mb-4">
-    <div class="flex-1 bg-gray-400 h-12"></div>
-    <div class="flex-1 bg-gray-500 h-12"></div>
-    <div class="flex-1 bg-gray-400 h-12"></div>
-    <div class="flex-1 bg-gray-500 h-12"></div>
-    <div class="flex-1 bg-gray-400 h-12"></div>
-  </div>
-
-  <!-- Seven columns -->
-  <div class="flex mb-4">
-    <div class="flex-1 bg-gray-400 h-12"></div>
-    <div class="flex-1 bg-gray-500 h-12"></div>
-    <div class="flex-1 bg-gray-400 h-12"></div>
-    <div class="flex-1 bg-gray-500 h-12"></div>
-    <div class="flex-1 bg-gray-400 h-12"></div>
-    <div class="flex-1 bg-gray-500 h-12"></div>
-    <div class="flex-1 bg-gray-400 h-12"></div>
-  </div>
-
-  <!-- Eleven columns -->
-  <div class="flex mb-4">
-    <div class="flex-1 bg-gray-400 h-12"></div>
-    <div class="flex-1 bg-gray-500 h-12"></div>
-    <div class="flex-1 bg-gray-400 h-12"></div>
-    <div class="flex-1 bg-gray-500 h-12"></div>
-    <div class="flex-1 bg-gray-400 h-12"></div>
-    <div class="flex-1 bg-gray-500 h-12"></div>
-    <div class="flex-1 bg-gray-400 h-12"></div>
-    <div class="flex-1 bg-gray-500 h-12"></div>
-    <div class="flex-1 bg-gray-400 h-12"></div>
-    <div class="flex-1 bg-gray-500 h-12"></div>
-    <div class="flex-1 bg-gray-400 h-12"></div>
-  </div>
-
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/">
+                  <path
+                    d="M13.6388 6.7174C13.36 6.7366 13.1014 6.93362 13.0088 7.1974L9.64884 16.3174C9.51722 16.6708 9.71911 17.1121 10.0726 17.2437C10.426 17.3753 10.8673 17.1734 10.9988 16.8199L14.3588 7.6999C14.4476 7.47481 14.4128 7.20527 14.2698 7.0101C14.1268 6.81493 13.8802 6.70055 13.6388 6.7174ZM8.66635 7.4374C8.51488 7.43236 8.37072 7.50418 8.25386 7.5649L2.97386 10.9249C2.77053 11.0543 2.64038 11.2914 2.64038 11.5324C2.64038 11.7734 2.77053 12.0105 2.97386 12.1399L8.25386 15.4999C8.57189 15.7123 9.05625 15.6102 9.26145 15.2874C9.46663 14.9647 9.35361 14.4828 9.02635 14.2849L4.69884 11.5324L9.02635 8.77991C9.29731 8.6223 9.44097 8.27373 9.3598 7.97096C9.27861 7.6682 8.97981 7.43829 8.66635 7.4374V7.4374ZM15.3413 7.4449C15.0312 7.44797 14.7365 7.67476 14.6542 7.97382C14.5719 8.27288 14.7089 8.61853 14.9739 8.77988L19.3013 11.5324L14.9739 14.2849C14.6466 14.4828 14.5336 14.9647 14.7388 15.2874C14.944 15.6102 15.4283 15.7123 15.7463 15.4999L21.0263 12.1399C21.2297 12.0105 21.3598 11.7734 21.3598 11.5324C21.3598 11.2914 21.2297 11.0543 21.0263 10.9249L15.7463 7.5649C15.6273 7.4859 15.4842 7.44352 15.3413 7.4449V7.4449Z">
+                  </path>
+                </svg>
+              </div>
+              <h2 class="text-gray-900 text-lg title-font font-semibold">Script library</h2>
+            </div>
+            <div class="flex-grow">
+              <p class="leading-relaxed text-base">Blue 4ottle crucifix vinyl post-ironic four dollar toast vegan
+                taxidermy. Gastropub indxgo juice poutine.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Tailwind CSS -->
 
   <script src="dist/js/main.js"></script>
 </body>
