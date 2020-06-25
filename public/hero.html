@@ -1,21 +1,1314 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FidaHost</title>
+    <link rel="stylesheet" href="build/tailwind.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="build/tailwind.css">
-</head>
+    <style>
+      .gradient {
+        /* background-image: radial-gradient(
+          circle farthest-corner at 20% 25.1%,
+          rgba(128, 102, 255, 1) 0%,
+          rgba(83, 112, 243, 1) 100.2%
+        ); */
+        background-color: #0093e9;
+        background-image: linear-gradient(135deg, #0093e9 49%, #b469da 100%);
+      }
+    </style>
+  </head>
 
-<body>
-  <div class=" bg-red-800">
+  <body>
+    <!-- Navbar -->
+    <header class="bg-gray-900 sm:flex sm:justify-start sm:items-center sm:px-4 sm:py-3">
+      <div class="flex items-center justify-between px-4 py-3 sm:p-0">
+        <div>
+          <img class="h-6" src="img/fh-icon.png" alt="logo" />
+        </div>
+        <div class="ml-4">
+          <a class="text-white" href="pricing.html">Pricing</a>
+          <a class="text-white" href="hero.html">Hero</a>
 
-    <div class="container bg-gray-600 mx-auto px-20">
-      <h1>kot e kot</h1>
+          <a class="text-white" href="colors.html">Colors</a>
+        </div>
+        <div class="sm:hidden">
+          <button
+            type="button"
+            data-menu-toggle
+            class="block text-gray-500 hover:text-white focus:text-white focus:outline-none"
+          >
+            <svg class="h-6 w-6 block" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div data-menu class="hidden px-2 pb-4 sm:flex sm:p-0 sm:ml-3">
+        <a href="#" class="block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800"
+          >Hosting</a
+        >
+        <a
+          href="#"
+          class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0"
+          >Virtual Servers</a
+        >
+        <a
+          href="#"
+          class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0"
+          >Dedicated Servers</a
+        >
+        <a
+          href="#"
+          class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0"
+          >Domains</a
+        >
+        <a
+          href="#"
+          class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0"
+          >Web Design</a
+        >
+        <a
+          href="#"
+          class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0"
+          >Affiliates</a
+        >
+      </div>
+    </header>
 
-    </div>
-  </div>
-</body>
+    <!-- Hero Section -->
+    <section class="gradient text-gray-700 body-font">
+      <div class="container mx-auto flex py-24 md:flex-row flex-col items-center xl:px-16">
+        <div
+          class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
+        >
+          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-semibold text-white">
+            Unmatched Web Hosting
+            <br class="hidden lg:inline-block" />you can rely ON.
+          </h1>
+          <p class="mb-8 leading-relaxed text-gray-400">
+            Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed
+            tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken
+            authentic tumeric truffaut hexagon try-hard chambray.
+          </p>
+          <div class="flex justify-center">
+            <button
+              class="inline-flex text-white bg-blu-500 border-0 py-4 px-10 font-semibold focus:outline-none hover:bg-blu-600 rounded text-lg"
+            >
+              Get Started Now
+            </button>
+          </div>
+        </div>
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+          <img class="object-cover object-center rounded" alt="hero" src="./hero.png" />
+        </div>
+      </div>
+    </section>
 
+    <!-- Pricing Section -->
+    <section class="text-gray-700 body-font overflow-hidden">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">
+            Our Products
+          </h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+            Personal website, freelancer, small or large company? We have complete hosting solution
+            for your needs. Choose a service and get started at a great price.
+          </p>
+        </div>
+        <div class="flex flex-wrap -m-4">
+          <div class="p-4 xl:w-1/4 md:w-1/2 w-full overflow-hidden">
+            <div
+              class="h-full p-8 rounded-lg border-2 border-gray-300 group bg-white hover:bg-blu-500 hover:border-blu-500 shadow-md flex flex-col relative"
+            >
+              <div class="text-center mb-5">
+                <span
+                  class="w-20 h-20 inline-flex items-center justify-center bg-blu-500 text-white rounded flex-shrink-0 group-hover:bg-white group-hover:text-blu-500"
+                >
+                  <svg
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="43"
+                    height="43"
+                    viewBox="-0.018 -137.968 294.418 269.298"
+                  >
+                    <g>
+                      <circle cx="54.394" cy="57.732" r="16" />
+                      <circle cx="124.796" cy="57.732" r="16" />
+                      <path
+                        d="M294.4 92.93v-76.8c0-7.069-5.729-12.8-12.8-12.8H12.8C5.73 3.33-.001 9.059-.001 16.13v76.8c0 7.07 5.729 12.801 12.801 12.801h13.881l-5.762 12.801H6.4a6.4 6.4 0 100 12.798H288a6.399 6.399 0 100-12.798h-14.53l-5.76-12.801h13.891c7.07-.001 12.799-5.731 12.799-12.801zm-64-38.401h12.8V80.13h-12.8V54.529zM204.8 41.73h12.801v38.398H204.8V41.73zm-25.6-6.4h12.799v44.8H179.2v-44.8zm-54.4-6.4c15.9 0 28.801 12.9 28.801 28.801 0 15.91-12.899 28.801-28.801 28.801-15.91 0-28.801-12.891-28.801-28.801.03-15.891 12.901-28.76 28.801-28.801zm-99.199 28.8c0-15.9 12.89-28.801 28.8-28.801 15.897 0 28.801 12.899 28.801 28.801 0 15.908-12.902 28.799-28.801 28.799C38.499 86.5 25.63 73.62 25.601 57.73zm9.34 60.8l5.817-12.8h212.871l5.82 12.8H34.941zM268.8 80.13h-12.801v-44.8H268.8v44.8z"
+                      />
+                    </g>
+                    <g>
+                      <path
+                        d="M181.901.305v14.698h7.181V.305h-7.181zm-76.603 14.697h7.182V.305h-7.182v14.697z"
+                      />
+                      <path
+                        d="M291.586-36.237l-33.501-7.405-1.017-9.067a27.521 27.521 0 0013.392-23.58v-19.15c-.005-15.204-12.336-27.521-27.532-27.512-15.195 0-27.512 12.316-27.52 27.512v19.15a27.513 27.513 0 0013.399 23.58l-1.023 9.067-33.501 7.405a3.596 3.596 0 00-1.431.734 27.407 27.407 0 00-9.128-2.656l-19.186-2.107-1.634-7.985a26.959 26.959 0 004.216-3.701l2.502 1.922a17.878 17.878 0 009.244 2.99c2.87-.089 5.69-.861 8.211-2.241a3.574 3.574 0 001.997-3.213v-51.752c.044-8.697-6.248-16.131-14.833-17.519a27.645 27.645 0 00-8.963-11.627 35.732 35.732 0 00-26.548-4.17c-18.735 3.199-32.676 19.061-33.425 38.056v47.012a3.585 3.585 0 001.988 3.213 16.145 16.145 0 0017.814-.994l2.041-1.567c.208.23.364.431.594.683a29.88 29.88 0 003.709 3.02l-1.617 7.874-19.173 2.107a27.55 27.55 0 00-9.141 2.656 3.486 3.486 0 00-1.433-.728l-33.492-7.412-1.024-9.067a27.504 27.504 0 0013.393-23.58v-19.15c0-15.204-12.324-27.527-27.52-27.527-15.203 0-27.527 12.324-27.527 27.527v19.15a27.51 27.51 0 0013.391 23.58l-1.022 9.067-33.491 7.405a3.596 3.596 0 00-2.813 3.508v47.398c0 .112.008.223.016.333h93.339v-26.139c.045-10.292 7.865-18.875 18.104-19.893l10.84-1.187-2.255 17.704a3.588 3.588 0 003.561 4.043h12.689l8.376 8.385a3.586 3.586 0 005.075 0l8.377-8.376h12.688a3.608 3.608 0 003.592-3.6c0-.148-.015-.296-.029-.445l-2.257-17.71 10.854 1.194c10.232 1.017 18.044 9.601 18.098 19.884l-.008 26.141h93.341c.007-.112.017-.223.017-.333v-47.398a3.596 3.596 0 00-2.814-3.509zm-224.278.102l-1.885 9.995-7.827-3.71 6.951-6.893 2.761.608zm-15.863 2.257l-8.11-8.11.869-7.776a27.11 27.11 0 007.241 1.001 27.178 27.178 0 007.234-1.001l.875 7.776-8.109 8.11zM31.1-95.44c.007-11.233 9.113-20.331 20.345-20.345 11.227.015 20.331 9.112 20.345 20.345v2.137a14.28 14.28 0 01-12.843-4.482 3.588 3.588 0 00-4.712-.638 38.356 38.356 0 01-23.134 6.352v-3.369zm0 19.15v-8.584c.616.03 1.255.059 1.988.059a45.267 45.267 0 0022.667-6.107 21.017 21.017 0 0016.034 4.935v9.698c0 11.234-9.111 20.345-20.345 20.345C40.203-55.945 31.1-65.056 31.1-76.29zm7.242 39.548l6.945 6.893-7.82 3.71-1.884-9.995 2.759-.608zm47.813 25.604h-.007v22.214H26.315V-9.269h-7.182v20.345H7.164v-40.918l21.398-4.742 2.708 14.357a3.592 3.592 0 004.2 2.856c.297-.051.593-.148.868-.282l15.106-7.167 15.107 7.167a3.579 3.579 0 004.778-1.707c.133-.274.23-.571.29-.868l2.707-14.357L94.13-30.2a26.914 26.914 0 00-7.975 19.062zm33.664-56.961c.089 1.528.363 3.036.794 4.496a29.42 29.42 0 001.491 4.155c.237.608.527 1.202.861 1.774l-1.893 1.469a8.624 8.624 0 01-8.592 1.372v-44.674c.854-15.454 12.228-28.284 27.462-30.977a28.817 28.817 0 0121.124 2.901 20.991 20.991 0 017.121 10.135 3.585 3.585 0 003.467 2.664c5.735.09 10.312 4.801 10.239 10.537v49.415a8.217 8.217 0 01-8.235-1.134l-2.25-1.729c.083-.149.143-.318.224-.468.187-.355.341-.727.511-1.091.378-.809.72-1.632 1.018-2.478.148-.415.281-.845.407-1.275.261-.854.461-1.729.622-2.611.076-.394.172-.78.226-1.181.192-1.29.296-2.588.304-3.887v-23.938a3.59 3.59 0 00-3.592-3.591c-.713 0-1.403.209-1.988.594-3.525 2.338-14.045 7.717-20.345 4.571a26.439 26.439 0 00-27.862 3.435 3.606 3.606 0 00-1.268 2.747v16.174c-.01.866.042 1.736.154 2.595zm11.419 10.025c-.052-.076-.557-.75-.609-.817a21.41 21.41 0 01-1.165-1.884 10.485 10.485 0 01-.794-1.551 20.068 20.068 0 01-1.128-3.146 15.018 15.018 0 01-.578-3.324 14.477 14.477 0 01-.119-1.892v-14.358a18.71 18.71 0 0118.742-1.58c7.234 3.613 16.243.719 21.948-1.952v17.881a19.736 19.736 0 01-3.807 11.717 5.221 5.221 0 00-.474.675 22.21 22.21 0 00-.329.393 19.557 19.557 0 01-5.617 4.882l-.117.06a20.434 20.434 0 01-20.004 0l-.147-.074a20.194 20.194 0 01-4.163-3.139c-.504-.549-1.017-1.091-1.336-1.491l-.303-.4zm26.466 20.203l-9.646 12.659c-.563.757-1.157.771-1.743-.022l-9.639-12.629 1.417-6.899a26.627 26.627 0 0018.193 0l1.418 6.891zm-1.084 20.226c-.949 0-1.87.379-2.538 1.046l-6.892 6.894-6.893-6.894a3.601 3.601 0 00-2.538-1.046h-10.091l1.952-15.38 1.58-.171 9.379 12.302c2.752 3.644 7.931 4.378 11.582 1.632a8.367 8.367 0 001.617-1.617l9.4-12.317 1.581.171 1.95 15.38H156.62zm102.177-18.49l-1.884 9.995-7.82-3.71 6.945-6.893 2.759.608zm-15.861 2.257l-8.112-8.11.87-7.776a27.1 27.1 0 007.242 1.001 27.13 27.13 0 007.232-1.001l.877 7.776-8.109 8.11zM222.589-95.44c.015-11.233 9.112-20.331 20.347-20.345 11.233.015 20.329 9.112 20.344 20.345v2.137a14.282 14.282 0 01-12.844-4.482 3.577 3.577 0 00-4.704-.638 38.397 38.397 0 01-23.143 6.352v-3.369zm0 19.15v-8.584c.624.03 1.253.059 1.987.059a45.269 45.269 0 0022.669-6.107 21.018 21.018 0 0016.034 4.935v9.698c-.007 11.234-9.118 20.337-20.352 20.337-11.234-.007-20.338-9.111-20.338-20.338zm7.241 39.548l6.953 6.893-7.828 3.71-1.884-9.995 2.759-.608zm57.386 47.82h-11.968V-9.267h-7.183v20.345h-59.842v-22.214a26.89 26.89 0 00-7.976-19.061l19.804-4.385 2.707 14.357a3.592 3.592 0 005.067 2.575l15.109-7.175 15.104 7.175a3.587 3.587 0 004.778-1.708c.134-.274.229-.571.289-.868l2.707-14.357 21.399 4.742v40.918h.005z"
+                      />
+                    </g>
+                  </svg>
+                </span>
+              </div>
+
+              <h2
+                class="text-xs text-center text-gray-600 tracking-widest title-font mb-1 font-normal group-hover:text-white"
+              >
+                Starting at
+              </h2>
+              <h1
+                class="text-5xl text-blu-500 text-center font-semibold pb-2 mb-1 leading-none group-hover:text-white"
+              >
+                $0.99
+              </h1>
+              <h2
+                class="text-xs text-center text-gray-600 tracking-widest title-font font-normal pb-2 group-hover:text-white"
+              >
+                per month
+              </h2>
+              <span
+                class="bg-blu-500 border rounded border-blu-500 pb-1 group-hover:bg-white group-hover:border-white"
+              ></span>
+
+              <h1
+                class="text-xl text-blu-500 text-center font-semibold mt-5 pb-2 mb-1 leading-none group-hover:text-white"
+              >
+                Shared Hosting
+              </h1>
+
+              <p class="flex items-center text-center text-gray-600 mb-2 group-hover:text-white">
+                A Simple & Complete solution to start your website powered with fast SSD storage.
+              </p>
+
+              <button
+                class="mt-5 flex items-center text-white bg-blu-500 tracking-wider font-semibold border-0 py-4 px-4 focus:outline-none group-hover:bg-white rounded group-hover:text-blu-500"
+              >
+                Learn More
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-auto"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="p-4 xl:w-1/4 md:w-1/2 w-full overflow-hidden">
+            <div
+              class="h-full p-8 rounded-lg border-2 border-gray-300 group bg-white hover:bg-blu-500 hover:border-blu-500 shadow-md flex flex-col relative"
+            >
+              <div class="text-center mb-5">
+                <span
+                  class="w-20 h-20 inline-flex items-center justify-center bg-blu-500 text-white rounded flex-shrink-0 group-hover:bg-white group-hover:text-blu-500"
+                >
+                  <svg
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="43"
+                    height="43"
+                    viewBox="604.336 202.132 33.025 33.133"
+                  >
+                    <g>
+                      <path
+                        d="M605.418 232.897a.617.617 0 100 1.235h30.867a.617.617 0 100-1.235h-2.087l-.617-1.233h2.088c.682 0 1.233-.554 1.233-1.235v-9.878c0-.682-.553-1.234-1.233-1.234h-1.235v-1.234h1.235c.682 0 1.233-.553 1.233-1.233v-2.785a8.696 8.696 0 01-.617.396c-.21.125-.4.224-.616.321a8.643 8.643 0 01-9.262-1.198v.797h-1.233v-2.073a8.591 8.591 0 01-1.854-5.334c0-.413.031-.826.093-1.235h-17.379c-.682 0-1.233.553-1.233 1.235v9.878c0 .682.553 1.234 1.233 1.234h1.234v1.233h-1.234c-.682 0-1.233.554-1.233 1.235v9.878c0 .682.553 1.233 1.233 1.233h2.087l-.616 1.235-2.087-.003zm3.469 0l.617-1.233h22.693l.617 1.233h-23.927zm5.79-7.408a3.088 3.088 0 016.174 0 3.087 3.087 0 11-6.174 0zm8.027 2.469v-4.939h1.234v4.939h-1.234zm2.47 0v-3.705h1.233v3.705h-1.233zm2.468 0v-4.321h1.235v4.321h-1.235zm2.47 0v-4.939h1.234v4.939h-1.234zm3.704 0h-1.234v-2.471h1.234v2.471zm-.617-9.876v1.233h-24.693v-1.233h24.693zm-10.495-7.411h1.234v3.705h-1.234v-3.705zm-4.94-1.851a3.088 3.088 0 11-.001 6.175 3.088 3.088 0 01.001-6.175zm-7.408 0a3.088 3.088 0 11-.001 6.175 3.088 3.088 0 01.001-6.175zm-3.087 16.669a3.088 3.088 0 116.175.001 3.088 3.088 0 01-6.175-.001zM623.821 204.08c.097-.279.207-.551.333-.814h-14.648a1.231 1.231 0 00-1.105.679l-.277.556h15.559c.039-.144.089-.287.138-.421z"
+                      />
+                      <path
+                        d="M610.356 227.341a1.854 1.854 0 100-3.708 1.854 1.854 0 000 3.708zm-.617-2.468h1.234v1.233h-1.234v-1.233zM619.617 225.489a1.853 1.853 0 10-3.705.001 1.853 1.853 0 003.705-.001zm-2.47-.616h1.235v1.233h-1.235v-1.233zM610.356 213.759a1.854 1.854 0 100-3.708 1.854 1.854 0 000 3.708zm-.617-2.468h1.234v1.233h-1.234v-1.233zM617.764 213.759a1.854 1.854 0 10-.001-3.707 1.854 1.854 0 00.001 3.707zm-.617-2.468h1.235v1.233h-1.235v-1.233zM630.026 203.614l-1.29 2.803h4.456l-1.29-2.803zM630.586 213.759l-2.492-6.773h-2.273zM630.964 213.143l2.264-6.157H628.7zM636.088 206.417l-2.156-2.803h-1.404l1.289 2.803zM633.833 206.986l-2.49 6.775 4.764-6.775zM625.84 206.417h2.271l1.289-2.803h-1.404zM625.648 204.296l.285-.796.798-.286-.798-.284-.285-.798-.284.798-.799.284.799.286zM636.279 209.099l-.284.799-.799.284.799.284.284.799.285-.799.798-.284-.798-.284zM634.179 213.561l-.284-.799-.284.799-.799.284.799.283.284.8.284-.8.799-.283z"
+                      />
+                    </g>
+                  </svg>
+                </span>
+              </div>
+
+              <h2
+                class="text-xs text-center text-gray-600 tracking-widest title-font mb-1 font-normal group-hover:text-white"
+              >
+                Starting at
+              </h2>
+              <h1
+                class="text-5xl text-blu-500 text-center font-semibold pb-2 mb-1 leading-none group-hover:text-white"
+              >
+                $2.99
+              </h1>
+              <h2
+                class="text-xs text-center text-gray-600 tracking-widest title-font font-normal pb-2 group-hover:text-white"
+              >
+                per month
+              </h2>
+              <span
+                class="bg-blu-500 border rounded border-blu-500 pb-1 group-hover:bg-white group-hover:border-white"
+              ></span>
+
+              <h1
+                class="text-xl text-blu-500 text-center font-semibold mt-5 pb-2 mb-1 leading-none group-hover:text-white"
+              >
+                Business Hosting
+              </h1>
+
+              <p class="flex items-center text-center text-gray-600 mb-2 group-hover:text-white">
+                A Powerful & Complete solution for your business with more resources and without
+                technical pain.
+              </p>
+
+              <button
+                class="mt-5 flex items-center text-white bg-blu-500 tracking-wider font-semibold border-0 py-4 px-4 focus:outline-none group-hover:bg-white rounded group-hover:text-blu-500"
+              >
+                Learn More
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-auto"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="p-4 xl:w-1/4 md:w-1/2 w-full overflow-hidden">
+            <div
+              class="h-full p-8 rounded-lg border-2 border-gray-300 group bg-white hover:bg-blu-500 hover:border-blu-500 shadow-md flex flex-col relative"
+            >
+              <div class="text-center mb-5">
+                <span
+                  class="w-20 h-20 inline-flex items-center justify-center bg-blu-500 text-white rounded flex-shrink-0 group-hover:bg-white group-hover:text-blu-500"
+                >
+                  <svg
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="43"
+                    height="43"
+                    viewBox="673.999 -88.756 43 43"
+                  >
+                    <path
+                      d="M701.519-81.084c0-4.215 3.44-7.672 7.74-7.672s7.74 3.457 7.74 7.672c0 4.214-3.44 7.672-7.74 7.672s-7.74-3.41-7.74-7.672zm7.979 3.93c0 .474.382.852.86.852h1.48c.479 0 .86-.378.86-.852v-1.421a.853.853 0 00-.86-.853h-1.48a.852.852 0 00-.765.474l-2.15-1.421v-1.515-.048l2.103-1.137c.095.332.43.616.813.616h1.48c.478 0 .86-.379.86-.853v-1.421a.853.853 0 00-.86-.853h-1.48a.852.852 0 00-.86.853v.805l-2.484 1.326a.777.777 0 00-.431-.143h-1.48a.853.853 0 00-.86.853v1.468c0 .474.383.853.86.853h1.481a.899.899 0 00.382-.095l2.532 1.657v.855h-.001zM674.381-47.035h13.474v-1.705h-13.474a.376.376 0 00-.382.379v.947c0 .189.144.379.382.379zM700.23-48.74v1.705h12.374a.375.375 0 00.382-.379v-.995a.374.374 0 00-.382-.378H700.23v.047zM694.592-54.28h-1.1c-.144 0-.238.094-.238.237v4.025h-3.727a.427.427 0 00-.431.426v3.409c0 .237.191.427.431.427h9.029a.427.427 0 00.431-.427v-3.409a.426.426 0 00-.431-.426h-3.727v-4.025c.001-.143-.094-.237-.237-.237zM676.771-55.559h34.447c.956 0 1.721-.757 1.721-1.704v-5.967c0-.947-.765-1.705-1.721-1.705h-34.447c-.956 0-1.721.758-1.721 1.705v5.967c0 .947.765 1.704 1.721 1.704zm3.01-6.771c1.146 0 2.102.947 2.102 2.083 0 1.137-.955 2.083-2.102 2.083s-2.103-.947-2.103-2.083c0-1.136.956-2.083 2.103-2.083z"
+                    />
+                    <path
+                      d="M676.771-76.443h24.318a9.456 9.456 0 008.17 4.688c1.29 0 2.532-.284 3.68-.758v3.742c0 .947-.765 1.705-1.721 1.705h-34.447a1.706 1.706 0 01-1.721-1.705v-5.967c0-.948.765-1.705 1.721-1.705zm3.01 6.771c1.146 0 2.102-.947 2.102-2.083 0-1.137-.955-2.084-2.102-2.084s-2.103.947-2.103 2.084c0 1.136.956 2.083 2.103 2.083zM676.771-87.952h26.134c-1.863 1.705-3.058 4.167-3.058 6.867 0 .852.144 1.705.335 2.51h-23.411a1.706 1.706 0 01-1.721-1.705v-5.967c0-.899.765-1.705 1.721-1.705zm3.01 6.82c1.146 0 2.102-.947 2.102-2.083 0-1.137-.955-2.084-2.102-2.084s-2.103.948-2.103 2.084c0 1.136.956 2.083 2.103 2.083z"
+                    />
+                  </svg>
+                </span>
+              </div>
+
+              <h2
+                class="text-xs text-center text-gray-600 tracking-widest title-font mb-1 font-normal group-hover:text-white"
+              >
+                Starting at
+              </h2>
+              <h1
+                class="text-5xl text-blu-500 text-center font-semibold pb-2 mb-1 leading-none group-hover:text-white"
+              >
+                $4.99
+              </h1>
+              <h2
+                class="text-xs text-center text-gray-600 tracking-widest title-font font-normal pb-2 group-hover:text-white"
+              >
+                per month
+              </h2>
+              <span
+                class="bg-blu-500 border rounded border-blu-500 pb-1 group-hover:bg-white group-hover:border-white"
+              ></span>
+
+              <h1
+                class="text-xl text-blu-500 text-center font-semibold mt-5 pb-2 mb-1 leading-none group-hover:text-white"
+              >
+                VPS Hosting
+              </h1>
+
+              <p class="flex items-center text-center text-gray-600 mb-2 group-hover:text-white">
+                Completely customizable VPSs with fast SSD storage and easy to scale when your
+                requirements grow.
+              </p>
+
+              <button
+                class="mt-5 flex items-center text-white bg-blu-500 tracking-wider font-semibold border-0 py-4 px-4 focus:outline-none group-hover:bg-white rounded group-hover:text-blu-500"
+              >
+                Learn More
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-auto"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="p-4 xl:w-1/4 md:w-1/2 w-full overflow-hidden">
+            <div
+              class="h-full p-8 rounded-lg border-2 border-gray-300 group bg-white hover:bg-blu-500 hover:border-blu-500 shadow-md flex flex-col relative"
+            >
+              <div class="text-center mb-5">
+                <span
+                  class="w-20 h-20 inline-flex items-center justify-center bg-blu-500 text-white rounded flex-shrink-0 group-hover:bg-white group-hover:text-blu-500"
+                >
+                  <svg
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="43"
+                    height="43"
+                    viewBox="249.946 134.931 361.604 386.336"
+                  >
+                    <path
+                      d="M404.776 222.647h15.15v18.436h-15.15zM560.012 340.63H264.69a14.684 14.684 0 00-14.744 14.745v51.611a14.684 14.684 0 0014.744 14.745h295.322c8.19 0 14.746-6.555 14.746-14.745v-51.611a14.686 14.686 0 00-14.746-14.745zM560.012 440.167H264.69a14.684 14.684 0 00-14.744 14.745v51.611a14.683 14.683 0 0014.744 14.744h295.322c8.19 0 14.746-6.554 14.746-14.744v-51.611a14.686 14.686 0 00-14.746-14.745z"
+                    />
+                    <path
+                      d="M543.219 281.638c-29.9 0-56.115-16.388-70.043-40.556H264.69a14.685 14.685 0 00-14.744 14.748v51.613a14.685 14.685 0 0014.744 14.746h295.322c8.19 0 14.746-6.555 14.746-14.746v-32.361c-9.83 4.097-20.48 6.556-31.539 6.556zM488.741 141.542H264.69c-8.19 0-14.746 6.963-14.744 14.746v51.611a14.685 14.685 0 0014.744 14.748h200.705c-1.639-6.963-2.867-14.336-2.867-21.709 0-23.35 10.24-44.65 26.213-59.396z"
+                    />
+                    <path
+                      d="M404.776 322.19h15.15v18.436h-15.15zM404.776 421.732h15.15v18.436h-15.15z"
+                    />
+                    <path
+                      class="text-blu-500 group-hover:text-white"
+                      d="M297.503 201.292c10.604 0 19.199-8.596 19.199-19.199 0-10.602-8.597-19.197-19.199-19.197-10.604 0-19.2 8.596-19.2 19.197 0 10.604 8.597 19.199 19.2 19.199zm-6.4-25.599h12.801v12.801h-12.801v-12.801zM379.004 182.095c0-10.604-8.599-19.199-19.201-19.199s-19.199 8.596-19.199 19.199 8.599 19.197 19.199 19.197c10.605.002 19.201-8.593 19.201-19.197zm-25.599-6.4h12.8v12.801h-12.8v-12.801zM297.503 300.834c10.604 0 19.199-8.597 19.199-19.199 0-10.602-8.597-19.196-19.199-19.196-10.604 0-19.2 8.596-19.2 19.196 0 10.604 8.597 19.199 19.2 19.199zm-6.4-25.599h12.801v12.801h-12.801v-12.801zM379.004 281.638c0-10.604-8.599-19.199-19.201-19.199s-19.199 8.596-19.199 19.199c0 10.603 8.599 19.196 19.199 19.196 10.605.002 19.201-8.593 19.201-19.196zm-25.599-6.401h12.8v12.801h-12.8v-12.801zM297.503 400.379c10.604 0 19.199-8.596 19.199-19.199 0-10.602-8.597-19.196-19.199-19.196-10.604 0-19.2 8.596-19.2 19.196 0 10.604 8.597 19.199 19.2 19.199zm-6.4-25.599h12.801v12.801h-12.801V374.78zM379.004 381.182c0-10.604-8.599-19.198-19.201-19.198s-19.199 8.596-19.199 19.198c0 10.604 8.599 19.197 19.199 19.197 10.605.002 19.201-8.593 19.201-19.197zm-25.599-6.4h12.8v12.801h-12.8v-12.801zM297.503 499.917c10.604 0 19.199-8.596 19.199-19.199 0-10.602-8.597-19.196-19.199-19.196-10.604 0-19.2 8.596-19.2 19.196 0 10.603 8.597 19.199 19.2 19.199zm-6.4-25.6h12.801v12.801h-12.801v-12.801zM379.004 480.719c0-10.604-8.599-19.199-19.201-19.199s-19.199 8.597-19.199 19.199c0 10.604 8.599 19.197 19.199 19.197 10.605.002 19.201-8.593 19.201-19.197zm-25.599-6.4h12.8v12.801h-12.8v-12.801z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M529.708 266.771c-9.954-1.551-19.907-5.53-28.534-11.945-3.097-2.434-5.974-4.866-8.627-7.741l5.088-5.087c4.867 5.971 11.061 10.838 18.358 14.377 4.646 2.212 9.068 3.76 13.715 4.866M491.442 233.147l-5.529 5.752c-8.184-12.389-11.944-26.985-10.838-41.807h9.289c-1.549 12.609 1.107 25.218 7.078 36.055zM499.184 150.422l8.406 8.405c-8.627 5.972-15.705 14.377-19.688 24.552-.44 1.106-.885 2.212-1.104 3.318H476.62c1.99-8.184 5.531-16.369 10.841-23.669 3.319-4.864 7.299-9.068 11.723-12.606zM575.276 143.786l-.664.664c-2.877 2.654-7.301 7.078-10.176 9.732l-8.185-2.876c-12.829-4.866-26.985-3.538-39.149 1.771l-9.07-9.07c20.791-11.503 47.556-12.607 67.244-.221zM540.325 262.788c13.492.664 26.322-3.539 38.931-12.607 1.549-1.105 3.096-2.213 4.645-3.097 0 0 .443.222.664.442-10.396 13.271-26.986 20.127-44.238 20.127M611.549 202.401c-5.972.442-11.724.664-18.138 1.106-.885-14.156-5.088-25.88-12.828-36.718l-1.771-1.771c1.549-3.76 4.203-9.511 5.973-13.271l.664-1.326c17.032 14.158 24.332 30.967 26.1 51.98zM577.043 153.519s-22.341 49.989-22.562 50.21c-1.549 4.646-5.973 7.963-11.061 7.963a11.893 11.893 0 01-11.943-11.944c0-3.761 1.771-7.078 4.646-9.291l39.37-38.044c.664-.664 1.994.22 1.55 1.106z"
+                    />
+                  </svg>
+                </span>
+              </div>
+
+              <h2
+                class="text-xs text-center text-gray-600 tracking-widest title-font mb-1 font-normal group-hover:text-white"
+              >
+                Starting at
+              </h2>
+              <h1
+                class="text-5xl text-blu-500 text-center font-semibold pb-2 mb-1 leading-none group-hover:text-white"
+              >
+                $5.99
+              </h1>
+              <h2
+                class="text-xs text-center text-gray-600 tracking-widest title-font font-normal pb-2 group-hover:text-white"
+              >
+                per month
+              </h2>
+              <span
+                class="bg-blu-500 border rounded border-blu-500 pb-1 group-hover:bg-white group-hover:border-white"
+              ></span>
+
+              <h1
+                class="text-xl text-blu-500 text-center font-semibold mt-5 pb-2 mb-1 leading-none group-hover:text-white"
+              >
+                Dedicated Servers
+              </h1>
+
+              <p class="flex items-center text-center text-gray-600 mb-2 group-hover:text-white">
+                Powerful dedicated servers for most intensive business needs with 100% network
+                uptime guaranteed.
+              </p>
+
+              <button
+                class="mt-5 flex items-center text-white bg-blu-500 tracking-wider font-semibold border-0 py-4 px-4 focus:outline-none group-hover:bg-white rounded group-hover:text-blu-500"
+              >
+                Learn More
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-auto"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tailwind CSS -->
+    <!-- Domain Section Tailwind CSS -->
+    <section class="text-gray-700 body-font">
+      <div class="container px-5 mx-auto">
+        <div class="lg:w-4/5 sm:mx-auto -mx-2">
+          <h3
+            class="mt-6 text-3xl text-center leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
+          >
+            Choose a Domain
+          </h3>
+          <form class="mt-4 mb-0">
+            <div class="flex justify-center p-3 w-full mx-auto">
+              <input
+                class="flex-grow w-ful py-2 sm:py-3 px-4 bg-gray-100 text-gray-800 border-gray-300 border-2 rounded-l-md outline-none placeholder-gray-500 focus:bg-white"
+                type="text"
+                placeholder="example.com"
+              />
+              <button
+                class="py-2 px-2 sm:py-3-8 sm:px-8 bg-blu-500 text-gray-100 font-semibold uppercase text-sm sm:text-base hover:bg-blu-600 rounded-r-md overflow-hidden"
+              >
+                Search
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="md:pl-12 lg:pl-8">
+          <div
+            class="flex justify-center flex-wrap title-font font-bold text-sm md:text-base md:justify-between lg:w-4/5 lg:flex-no-wrap lg:mx-auto leading-6 text-gray-700"
+          >
+            <div class="mt-0 md:mt-3 w-1/4 md:w-1/10">
+              <a href="#">
+                <p>.com $9.99</p>
+              </a>
+            </div>
+            <div class="mt-0 md:mt-3 w-1/4 md:w-1/10">
+              <a href="#">
+                <p>.net $12.99</p>
+              </a>
+            </div>
+            <div class="mt-0 md:mt-3 w-1/4 md:w-1/10">
+              <a href="#">
+                <p>.org $12.99</p>
+              </a>
+            </div>
+            <div class="mt-0 md:mt-3 w-1/4 md:w-1/10">
+              <a href="#">
+                <p>.info $12.99</p>
+              </a>
+            </div>
+            <div class="mt-3 w-1/4 md:w-1/10">
+              <a href="#">
+                <p>.top $1.99</p>
+              </a>
+            </div>
+            <div class="mt-3 w-1/4 md:w-1/10">
+              <a href="#">
+                <p>.eu $2.99</p>
+              </a>
+            </div>
+            <div class="mt-3 w-1/4 md:w-1/10">
+              <a href="#">
+                <p>.me $2.99</p>
+              </a>
+            </div>
+            <div class="mt-3 w-1/4 md:w-1/10">
+              <a href="#">
+                <p>.best $2.99</p>
+              </a>
+            </div>
+            <!-- <ul class=" flex flex-wrap  ">
+                <li class=" pr-5 mt-2 "><a href="#">
+                    <p>.com <span>$9.99</span></p>
+                  </a></li>
+                <li class=" pr-5 mt-2 "><a href="#">
+                    <p>.net <span>$12.99</span></p>
+                  </a></li>
+                <li class=" pr-5 mt-2 "><a href="#">
+                    <p>.org <span>$12.99</span></p>
+                  </a></li>
+                <li class=" pr-0 mt-2 "><a href="#">
+                    <p>.info <span>$12.99</span></p>
+                  </a></li>
+                <li class=" pr-5 mt-2 "><a href="#">
+                    <p>.top <span>$1.99</span></p>
+                  </a></li>
+                <li class=" pr-5 mt-2 "><a href="#">
+                    <p>.eu <span>$2.99</span></p>
+                  </a></li>
+                <li class=" pr-5 mt-2 "><a href="#">
+                    <p>.me <span>$2.99</span></p>
+                  </a></li>
+                <li class=" pr-0 mt-2 "><a href="#">
+                    <p>.best <span>$2.99</span></p>
+                  </a></li>
+              </ul> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Domain -->
+    <section class="text-gray-700 body-font">
+      <div class="container px-5 py-16 mx-auto">
+        <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+          <div class="p-3 md:w-2/4 lg:w-1/3 w-full">
+            <div
+              class="border-gray-300 border-2 rounded-md outline-none shadow-md flex p-4 h-full items-center"
+            >
+              <svg
+                class="flex-shrink-0 mr-4"
+                width="42"
+                height="42"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0)">
+                  <path
+                    d="M40.67 16.927H13.06c-.737 0-1.331.51-1.331 1.138v7.04c0 .628.594 1.137 1.33 1.137h27.613c.736 0 1.33-.509 1.33-1.138v-7.039c0-.629-.594-1.138-1.33-1.138zm-23.73 6.375a.778.778 0 01-1.554 0v-3.435a.778.778 0 011.554 0v3.435zm3.327 0c0 .43-.349.777-.78.777a.776.776 0 01-.774-.777v-3.435c0-.428.347-.776.774-.776.431 0 .78.348.78.776v3.435zm3.329 0c0 .43-.35.777-.78.777a.776.776 0 01-.774-.777v-3.435c0-.428.346-.776.774-.776.43 0 .78.348.78.776v3.435zm12.254.112a1.83 1.83 0 11-.003-3.66 1.83 1.83 0 01.003 3.66zM40.67 27.683H13.06c-.737 0-1.331.511-1.331 1.139v7.04c0 .629.594 1.138 1.33 1.138h27.613c.736 0 1.33-.51 1.33-1.138v-7.04c0-.628-.594-1.139-1.33-1.139zM16.94 34.06a.777.777 0 01-1.554 0v-3.435a.778.778 0 011.554 0v3.435zm3.327 0a.777.777 0 01-1.554 0v-3.435c0-.43.347-.777.774-.777.431 0 .78.348.78.777v3.435zm3.329 0a.777.777 0 01-1.554 0v-3.435c0-.43.346-.777.774-.777.43 0 .78.348.78.777v3.435zm12.254.113a1.83 1.83 0 110-3.662 1.83 1.83 0 010 3.662z"
+                    fill="#1F5AA6"
+                  />
+                  <path
+                    d="M2.808 28.727V12.85c0-1.176.89-2.13 1.99-2.13h25.466c1.1 0 1.99.954 1.99 2.13v1.67h2.807V7.983A2.984 2.984 0 0032.078 5H2.983A2.986 2.986 0 000 7.983v22.625a2.986 2.986 0 002.983 2.983H9.32v-2.734H4.796c-1.1 0-1.988-.954-1.988-2.13zM13.987 6.306c.723 0 1.304.584 1.304 1.306a1.304 1.304 0 11-2.61 0c0-.722.585-1.306 1.306-1.306zm-4.538 0a1.305 1.305 0 110 2.61 1.305 1.305 0 010-2.61zm-4.537 0a1.305 1.305 0 110 2.61 1.305 1.305 0 010-2.61z"
+                    fill="#63B0F2"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <path fill="#fff" d="M0 0h42v42H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span class="title-font font-semibold">Free hosting lite package</span>
+            </div>
+          </div>
+          <div class="p-3 md:w-2/4 lg:w-1/3 w-full">
+            <div
+              class="border-gray-300 border-2 rounded-md outline-none shadow-md flex p-4 h-full items-center"
+            >
+              <svg
+                class="flex-shrink-0 mr-4"
+                width="42"
+                height="42"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M32.738 5H9.271A5.277 5.277 0 004 10.271v15.691a5.278 5.278 0 005.271 5.272h2.184L16.645 37l.693-.823c.024-.028 2.24-2.656 4.371-4.943h11.029a5.278 5.278 0 005.27-5.272v-15.69A5.277 5.277 0 0032.739 5zm3.397 20.962a3.401 3.401 0 01-3.397 3.397H20.9l-.277.295a140.693 140.693 0 00-4.019 4.497l-4.313-4.792H9.27a3.4 3.4 0 01-3.397-3.398v-15.69a3.401 3.401 0 013.397-3.397h23.467a3.401 3.401 0 013.397 3.397v15.691z"
+                  fill="#63B0F2"
+                />
+                <path
+                  d="M23.93 10.392a4.292 4.292 0 00-1.506-.696 7.521 7.521 0 00-1.868-.221c-.698 0-1.375.082-2.03.248a6.737 6.737 0 00-1.814.745v3.25a5.732 5.732 0 011.717-1.063 4.85 4.85 0 011.75-.351c.259 0 .495.04.707.118.212.08.392.188.54.324.147.137.26.301.339.492.08.19.12.398.12.62 0 .26-.037.496-.109.708-.072.212-.18.417-.324.615a4.56 4.56 0 01-.523.594c-.205.198-.445.412-.718.643a6.19 6.19 0 00-.68.653 3.67 3.67 0 00-.487.691 3.2 3.2 0 00-.291.772 3.981 3.981 0 00.13 2.203h2.84a1.534 1.534 0 01-.189-.453 2.081 2.081 0 01-.07-.529c0-.252.032-.477.097-.675a2.08 2.08 0 01.286-.561c.126-.176.284-.355.475-.535.19-.18.412-.374.664-.583.375-.31.706-.61.994-.901.288-.292.529-.596.723-.913.194-.317.342-.653.443-1.01.1-.356.151-.754.151-1.193 0-.69-.12-1.283-.361-1.776a3.28 3.28 0 00-1.005-1.216zM20.46 21.903c-.576 0-1.055.169-1.437.508-.382.338-.572.76-.572 1.263 0 .49.19.914.572 1.274.382.346.86.518 1.437.518.575 0 1.05-.169 1.425-.508.367-.338.55-.766.55-1.284 0-.511-.187-.932-.561-1.264-.374-.338-.846-.507-1.414-.507z"
+                  fill="#1F5AA6"
+                />
+              </svg>
+              <span class="title-font font-semibold">24x7 Dedicated Support</span>
+            </div>
+          </div>
+          <div class="p-3 md:w-2/4 lg:w-1/3 w-full">
+            <div
+              class="border-gray-300 border-2 rounded-md outline-none shadow-md flex p-4 h-full items-center"
+            >
+              <svg
+                class="flex-shrink-0 mr-4"
+                width="42"
+                height="42"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M35.812 18.41H5.622C4.73 18.41 4 17.68 4 16.787V6.622C4 5.73 4.73 5 5.622 5h30.194c.892 0 1.622.73 1.622 1.622v10.166a1.633 1.633 0 01-1.626 1.621z"
+                  stroke="#63B0F2"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  d="M11.268 12.925a1.22 1.22 0 100-2.44 1.22 1.22 0 000 2.44z"
+                  stroke="#1F5AA6"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  d="M16.8 11.705h6.444"
+                  stroke="#1F5AA6"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  d="M35.812 37H5.622C4.73 37 4 36.27 4 35.378V25.212c0-.892.73-1.622 1.622-1.622h30.194c.892 0 1.622.73 1.622 1.622v10.166A1.633 1.633 0 0135.812 37z"
+                  stroke="#63B0F2"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  d="M11.268 31.516a1.22 1.22 0 100-2.441 1.22 1.22 0 000 2.44z"
+                  stroke="#1F5AA6"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  d="M16.8 30.295h6.444"
+                  stroke="#1F5AA6"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                />
+              </svg>
+              <span class="title-font font-semibold">Free DNS Management </span>
+            </div>
+          </div>
+          <div class="p-3 md:w-2/4 lg:w-1/3 w-full">
+            <div
+              class="border-gray-300 border-2 rounded-md outline-none shadow-md flex p-4 h-full items-center"
+            >
+              <svg
+                class="flex-shrink-0 mr-4"
+                width="42"
+                height="42"
+                viewBox="0 0 42 42"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.9853 35.4691C18.3305 35.4691 16.5388 32.1976 15.7304 27.0301C17.0494 27.1579 18.4677 27.2288 19.9853 27.2288V25.702C18.4896 25.7042 16.9948 25.6236 15.508 25.461C15.187 22.4862 15.187 19.4859 15.508 16.5113C18.4827 16.1903 21.4829 16.1903 24.4575 16.5113C24.6205 17.9981 24.7007 19.4927 24.6986 20.9883H26.2305C26.2305 19.4614 26.1592 18.0431 26.0319 16.7334C31.1989 17.5512 34.4704 19.3431 34.4704 20.9883C34.47 21.9796 34.3689 22.9678 34.1681 23.9384L35.6666 24.2505C37.4609 15.5989 31.902 7.13084 23.2507 5.33655C14.5989 3.54227 6.13084 9.10117 4.33655 17.7527C2.54227 26.4044 8.10117 34.8723 16.7529 36.6666C19.4974 37.2358 22.3435 37.0741 25.0059 36.1972L24.5329 34.7458C23.066 35.2281 21.5301 35.4726 19.9853 35.4691ZM34.1683 18.0241C32.4947 16.7475 29.6909 15.6604 25.8426 15.1215C25.2943 11.2732 24.2165 8.4696 22.9401 6.79594C28.5788 7.983 32.9832 12.3896 34.1683 18.0289V18.0241ZM19.9853 6.49341C21.64 6.49341 23.4317 9.7649 24.2404 14.9324C22.9212 14.8048 21.5029 14.7337 19.9853 14.7337C18.4677 14.7337 17.0398 14.8046 15.7304 14.9324C16.5388 9.76512 18.3305 6.49819 19.9853 6.49819V6.49341ZM17.0307 6.79594C15.7541 8.4696 14.6667 11.2732 14.128 15.1215C10.2797 15.6698 7.47612 16.7478 5.80245 18.0241C6.98995 12.39 11.3918 7.988 17.0259 6.80072L17.0307 6.79594ZM13.9387 16.7239C13.8109 18.0428 13.7401 19.4611 13.7401 20.9788C13.7401 22.4964 13.8109 23.924 13.9387 25.2337C8.77142 24.4156 5.49971 22.624 5.49971 20.9788C5.49971 19.3336 8.76664 17.5371 13.9387 16.7191V16.7239ZM5.80224 23.9384C7.47569 25.2148 10.2795 26.3021 14.1278 26.8413C14.6761 30.6896 15.7538 33.4931 17.0304 35.1666C11.3924 33.9815 6.98778 29.5766 5.80224 23.9384Z"
+                  fill="#63B0F2"
+                />
+                <path
+                  d="M23.9518 23.4514L27.5589 36.8072L29.9606 30.6989L37.1325 29.6683L23.9518 23.4514Z"
+                  fill="#1F5AA6"
+                />
+              </svg>
+              <span class="title-font font-semibold">Free Domain Forwarding</span>
+            </div>
+          </div>
+          <div class="p-3 md:w-2/4 lg:w-1/3 w-full">
+            <div
+              class="border-gray-300 border-2 rounded-md outline-none shadow-md flex p-4 h-full items-center"
+            >
+              <svg
+                class="flex-shrink-0 mr-4"
+                width="42"
+                height="42"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.985 35.47c-1.654 0-3.446-3.272-4.255-8.44 1.32.128 2.738.199 4.255.199v-1.527a40.636 40.636 0 01-4.477-.241 41.708 41.708 0 010-8.95 41.706 41.706 0 018.95 0c.163 1.487.243 2.982.24 4.477h1.532c0-1.527-.07-2.945-.198-4.255 5.167.818 8.438 2.61 8.438 4.255 0 .992-.101 1.98-.302 2.95l1.499.313C38.46 15.598 32.902 7.13 24.25 5.336 15.599 3.542 7.13 9.1 5.337 17.753 3.542 26.404 9.1 34.873 17.753 36.667c2.744.569 5.59.407 8.253-.47l-.473-1.451a14.458 14.458 0 01-4.548.723zm14.183-17.446c-1.673-1.277-4.477-2.364-8.325-2.903-.549-3.848-1.627-6.651-2.903-8.325a14.533 14.533 0 0111.228 11.233v-.005zM20.985 6.494c1.655 0 3.447 3.27 4.255 8.438a44.216 44.216 0 00-4.255-.198c-1.517 0-2.945.07-4.255.198.809-5.167 2.6-8.434 4.255-8.434v-.005zm-2.954.302c-1.277 1.674-2.364 4.477-2.903 8.325-3.848.549-6.652 1.627-8.326 2.903A14.533 14.533 0 0118.026 6.801l.005-.005zm-3.092 9.928a44.143 44.143 0 00-.199 4.255c0 1.517.07 2.945.199 4.255-5.168-.818-8.44-2.61-8.44-4.255s3.268-3.442 8.44-4.26v.005zm-8.137 7.214c1.674 1.277 4.478 2.364 8.326 2.903.548 3.849 1.626 6.652 2.902 8.326A14.528 14.528 0 016.802 23.938z"
+                  fill="#63B0F2"
+                />
+                <path
+                  d="M29.572 23L24 25.756v2.886c0 3.536 2.332 6.578 5.572 7.358 3.24-.78 5.57-3.822 5.57-7.358v-2.886L29.573 23zm-.81 8.502l-2.75-2.522.639-.78 2.086 1.924 4-3.718.639.78-4.614 4.316z"
+                  fill="#1F5AA6"
+                />
+              </svg>
+              <span class="title-font font-semibold">Domain Theft Protection</span>
+            </div>
+          </div>
+          <div class="p-3 md:w-2/4 lg:w-1/3 w-full">
+            <div
+              class="border-gray-300 border-2 rounded-md outline-none shadow-md flex p-4 h-full items-center"
+            >
+              <svg
+                class="flex-shrink-0 mr-4"
+                width="42"
+                height="42"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.955 19.835l14.01-10.44v13.462c0 .824.55 1.373 1.374 1.373.825 0 1.374-.55 1.374-1.373V9.12c0-2.335-1.786-4.121-4.12-4.121H7.12C4.786 5 3 6.786 3 9.12v20.604c0 2.335 1.786 4.121 4.12 4.121h13.736c.825 0 1.374-.55 1.374-1.373 0-.825-.55-1.374-1.373-1.374H7.12c-.824 0-1.374-.55-1.374-1.374V9.395l14.697 10.44a1.078 1.078 0 001.511 0zm-.824-2.748L8.082 7.747h25.549l-12.5 9.34z"
+                  fill="#63B0F2"
+                />
+                <path
+                  d="M37.335 30.544l-4.12-4.12a1.328 1.328 0 00-1.924 0c-.55.549-.55 1.373 0 1.922l3.16 3.16-3.16 3.159c-.55.55-.55 1.373 0 1.923s1.374.55 1.923 0l4.121-4.12c.55-.55.55-1.374 0-1.924z"
+                  fill="#1F5AA6"
+                />
+                <path
+                  d="M30.467 30.544l-4.12-4.12a1.328 1.328 0 00-1.924 0c-.549.549-.549 1.373 0 1.922l3.16 3.16-3.16 3.159c-.549.55-.549 1.373 0 1.923.55.55 1.374.55 1.924 0l4.12-4.12c.55-.55.55-1.374 0-1.924z"
+                  fill="#1F5AA6"
+                />
+              </svg>
+              <span class="title-font font-semibold">Free Mail Forward</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Custom plans -->
+    <section class="text-gray-700 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="text-center mb-20">
+          <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">
+            Custom plans start at just $0.99 a month.
+          </h1>
+          <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
+            Every plan includes free trial and all of our core features:
+          </p>
+        </div>
+        <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+          <div class="p-3 sm:w-1/2 w-full">
+            <div class="bg-gray-200 rounded flex p-4 h-full items-center">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                class="text-dgreen-500 w-6 h-6 flex-shrink-0 mr-4"
+                viewBox="0 0 24 24"
+              >
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">Wordpress - FREE INSTALL</span>
+            </div>
+          </div>
+          <div class="p-3 sm:w-1/2 w-full">
+            <div class="bg-gray-200 rounded flex p-4 h-full items-center">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                class="text-dgreen-500 w-6 h-6 flex-shrink-0 mr-4"
+                viewBox="0 0 24 24"
+              >
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">Jomla - FREE INSTALL</span>
+            </div>
+          </div>
+          <div class="p-3 sm:w-1/2 w-full">
+            <div class="bg-gray-200 rounded flex p-4 h-full items-center">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                class="text-dgreen-500 w-6 h-6 flex-shrink-0 mr-4"
+                viewBox="0 0 24 24"
+              >
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">Drupal - FREE INSTALL</span>
+            </div>
+          </div>
+          <div class="p-3 sm:w-1/2 w-full">
+            <div class="bg-gray-200 rounded flex p-4 h-full items-center">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                class="text-dgreen-500 w-6 h-6 flex-shrink-0 mr-4"
+                viewBox="0 0 24 24"
+              >
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">PrestaShop - FREE INSTALL</span>
+            </div>
+          </div>
+          <div class="p-3 sm:w-1/2 w-full">
+            <div class="bg-gray-200 rounded flex p-4 h-full items-center">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                class="text-dgreen-500 w-6 h-6 flex-shrink-0 mr-4"
+                viewBox="0 0 24 24"
+              >
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">FREE - SSL Certificates</span>
+            </div>
+          </div>
+          <div class="p-3 sm:w-1/2 w-full">
+            <div class="bg-gray-200 rounded flex p-4 h-full items-center">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                class="text-dgreen-500 w-6 h-6 flex-shrink-0 mr-4"
+                viewBox="0 0 24 24"
+              >
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">FREE - Backups</span>
+            </div>
+          </div>
+          <div class="p-3 sm:w-1/2 w-full">
+            <div class="bg-gray-200 rounded flex p-4 h-full items-center">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                class="text-dgreen-500 w-6 h-6 flex-shrink-0 mr-4"
+                viewBox="0 0 24 24"
+              >
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">FREE - Website Builder</span>
+            </div>
+          </div>
+          <div class="p-3 sm:w-1/2 w-full">
+            <div class="bg-gray-200 rounded flex p-4 h-full items-center">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                class="text-dgreen-500 w-6 h-6 flex-shrink-0 mr-4"
+                viewBox="0 0 24 24"
+              >
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">FREE - Live Monitoring</span>
+            </div>
+          </div>
+        </div>
+        <button
+          class="flex mx-auto mt-16 text-white bg-blu-500 border-0 py-2 px-8 focus:outline-none hover:bg-blu-600 rounded text-lg"
+        >
+          Learn More
+        </button>
+      </div>
+    </section>
+
+    <!-- Transferin to FH Section -->
+    <section class="text-gray-700 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="text-center mb-20">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
+            Transfering to FidaHost is easy
+          </h1>
+        </div>
+        <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+          <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center">
+            <div class="w-20 h-20 inline-flex items-center justify-center mb-5 flex-shrink-0">
+              <svg width="65" height="64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M22.03 21.176C10.275 21.176.752 30.758.752 42.588.751 54.418 10.391 64 22.031 64 33.67 64 43.31 54.418 43.31 42.588c0-11.83-9.523-21.412-21.28-21.412zm13.99 12.54h-4.702c-.823-2.367-1.998-4.614-3.292-6.625 3.292 1.301 6.114 3.667 7.995 6.624zm-13.99-6.27c1.764 1.656 3.292 3.785 4.233 6.27h-8.582c1.175-2.485 2.586-4.614 4.35-6.27zm-5.878-.355c-1.41 2.01-2.586 4.14-3.291 6.624H8.158c1.881-2.957 4.703-5.323 7.994-6.624zM6.042 46.61c-.353-1.302-.47-2.603-.47-4.023 0-1.42.235-2.84.587-4.14h5.526a23.591 23.591 0 00-.353 4.14c0 1.301.118 2.72.235 4.022H6.042zm1.998 4.731h4.703a25.917 25.917 0 003.41 6.743 16.279 16.279 0 01-8.113-6.743zm13.99 6.388c-1.88-1.656-3.291-3.904-4.35-6.506h8.7c-.94 2.602-2.468 4.85-4.35 6.506zm-5.643-11.12a22.261 22.261 0 01-.352-4.022c0-1.42.117-2.84.352-4.14h11.287c.235 1.3.352 2.72.352 4.14 0 1.301-.117 2.72-.352 4.022H16.387zm11.64 11.475a25.917 25.917 0 003.409-6.743h4.702a16.28 16.28 0 01-8.112 6.743zm10.58-15.497c0 1.42-.235 2.72-.47 4.022h-5.643c.235-1.301.235-2.602.235-4.022a23.6 23.6 0 00-.353-4.14h5.526c.47 1.3.705 2.72.705 4.14z"
+                  fill="#1F5AA6"
+                />
+                <path
+                  d="M45.31 34.07c.94 2.603 1.527 5.442 1.527 8.4 9.876-1.775 17.518-10.53 17.518-21.058C64.355 9.582 54.832 0 43.075 0 32.612 0 23.912 7.571 22.15 17.627c1.646 0 3.174.118 4.703.473.117-.237.117-.592.235-.828h5.643c-.118.828-.235 1.774-.235 2.72 1.646.829 3.291 1.775 4.702 2.84 0-.474-.117-.947-.117-1.42 0-1.42.117-2.839.352-4.14h11.286a23.6 23.6 0 01.353 4.14c0 1.301-.117 2.721-.352 4.022H39.9c1.41 1.42 2.587 2.958 3.527 4.732h3.997a20.625 20.625 0 01-2.116 3.904zM33.787 12.54h-4.703c1.881-2.958 4.703-5.324 7.995-6.625-1.294 2.011-2.47 4.259-3.292 6.625zm5.055 0c1.058-2.485 2.469-4.614 4.232-6.27 1.764 1.656 3.292 3.785 4.233 6.27h-8.465zm20.221 4.732c.353 1.301.588 2.72.588 4.14 0 1.42-.235 2.721-.47 4.022h-5.643c.235-1.301.235-2.602.235-4.022a23.6 23.6 0 00-.353-4.14h5.643zM49.071 5.915c3.292 1.301 6.114 3.667 7.995 6.625h-4.703c-.823-2.366-1.881-4.614-3.292-6.625zm3.41 24.251h4.702a16.279 16.279 0 01-8.112 6.743 25.915 25.915 0 003.41-6.743zM7.57 17.272h11.168V9.937H7.57V6.743L.869 13.604l6.7 6.862v-3.194z"
+                  fill="#63B0F2"
+                />
+                <path
+                  d="M55.185 46.492H44.133v7.453h11.052v3.075l6.818-6.861-6.818-6.743v3.076z"
+                  fill="#1F5AA6"
+                />
+              </svg>
+            </div>
+            <div class="flex-grow">
+              <h2 class="text-gray-900 text-lg title-font font-medium mb-3">
+                Free Domain Transfer
+              </h2>
+              <p class="leading-relaxed text-base">
+                Already have your domain name? Transfer it over to FidaHost for free and set up your
+                website on our powerful servers with 99.9% uptime, guaranteed.
+              </p>
+              <a class="mt-3 text-indigo-500 inline-flex items-center"
+                >Learn More
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center">
+            <div class="w-20 h-20 inline-flex items-center justify-center mb-5 flex-shrink-0">
+              <svg width="74" height="64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M27.19 17.463v8.222h46.362v-8.222H27.19zm8.353 6.527h-1.934V21.7h1.934v2.29zm4.734 0h-1.934V21.7h1.934v2.29zm4.734 0h-1.934V21.7h1.934v2.29zm19.95-.126h-8.183v-2.29h8.182v2.29zM73.552 27.975V64H27.19V39.964h7.875l4.108 4.168 7.58-7.603-7.58-7.615-4.12 4.18H27.19v-5.12h46.362z"
+                  fill="#1F5AA6"
+                />
+                <path
+                  d="M47.094 10.512v4.66h-22.18v17.921h-3.539l-4.154-4.18-7.556 7.616 7.556 7.603 4.143-4.168h3.55v6.573H.72V10.512h46.374zM47.094 0H.72v8.222h46.374V0zM9.084 6.539H7.15v-2.29h1.935v2.29zm4.735 0h-1.935v-2.29h1.935v2.29zm4.734 0h-1.935v-2.29h1.935v2.29zM38.502 6.4H30.32v-2.29h8.182v2.29z"
+                  fill="#63B0F2"
+                />
+                <path
+                  d="M43.532 36.529l-4.348 4.362-1.604-1.625 1.593-1.592H17.244l1.593 1.592-1.616 1.626-4.335-4.363 4.335-4.375 1.616 1.627-1.593 1.603h21.93L37.58 33.78l1.604-1.627 4.348 4.375z"
+                  fill="#1F5AA6"
+                />
+              </svg>
+            </div>
+            <div class="flex-grow">
+              <h2 class="text-gray-900 text-lg title-font font-medium mb-3">
+                Free Website Migration
+              </h2>
+              <p class="leading-relaxed text-base">
+                Migrating your website from one host to another can be daunting, but we’ll help you
+                every step of the way to ensure your website stays online and available.
+              </p>
+              <a class="mt-3 text-indigo-500 inline-flex items-center"
+                >Learn More
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center">
+            <div class="w-20 h-20 inline-flex items-center justify-center mb-5 flex-shrink-0">
+              <svg width="69" height="64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M34.612.005c-.34.012-.686.049-1.017.122-2.646.58-4.696 2.997-4.844 6.019-.337 8.942-1.487 14.24-6.999 22.225-.688-1.104-1.894-1.852-3.27-1.852H4.534c-2.12 0-3.875 1.766-3.875 3.899V58.49c0 2.133 1.755 3.9 3.875 3.9h13.95c1.337 0 2.523-.702 3.22-1.755.807.653 1.553 1.24 2.326 1.706 1.278.77 2.722 1.232 4.698 1.438 3.952.411 10.437.107 25.405.17.352-.008.7-.138.969-.365 3.012-2.473 4.32-4.84 4.916-7.506.293-.091.558-.272.75-.512 2.253-2.833 3.068-6.101 2.544-8.92.215-.1.408-.251.557-.438 2.63-3.106 3.162-7.083 2.228-10.089 1.607-1.913 2.272-4.157 2.034-6.238-.379-2.635-2.28-5.283-4.698-5.703H43.476c1.193-7.898.402-15.157-2.252-19.86C39.79 1.778 37.7.357 35.629.053a5.446 5.446 0 00-1.017-.05zm3.923 5.849c2.267 4.016 3.208 11.529 1.672 19.593-.171.899.615 1.854 1.525 1.852h21.264c1.163.6 1.911 1.634 2.058 2.924.143 1.249-.362 2.718-1.622 4.094h-9.319c-.818 0-1.572.736-1.572 1.56 0 .824.754 1.57 1.573 1.56h9.124c.465 1.722.108 4.015-1.429 6.238h-7.695c-.82 0-1.572.735-1.572 1.56 0 .824.753 1.57 1.572 1.56h6.024c.465 1.722.108 4.014-1.429 6.238h-4.596c-.818 0-1.572.735-1.572 1.56 0 .823.754 1.57 1.573 1.559h2.73c-.477 1.669-1.352 2.948-3.366 4.679-14.405-.05-21.084.179-24.436-.17-1.709-.179-2.511-.431-3.415-.975-.814-.49-1.81-1.355-3.27-2.535v-24.32c7.203-9.217 9.138-16.967 9.494-26.563 1.037-4.779 5.223-3.46 6.684-.414zM4.533 29.638h13.95c.456 0 .775.32.775.78V58.49c0 .46-.319.78-.775.78H4.533c-.456 0-.775-.32-.775-.78V30.418c0-.46.32-.78.775-.78z"
+                  fill="#63B0F2"
+                />
+              </svg>
+            </div>
+            <div class="flex-grow">
+              <h2 class="text-gray-900 text-lg title-font font-medium mb-3">
+                Money-back Guarantee
+              </h2>
+              <p class="leading-relaxed text-base">
+                Try us and love us, or get a refund within 30 days of signing up. Your satisfaction
+                is our top priority.
+              </p>
+              <a class="mt-3 text-indigo-500 inline-flex items-center"
+                >Learn More
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="text-gray-700 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900">Why us?</h1>
+          <h2 class="text-sm text-blue-400 tracking-widest font-medium title-font mb-1">
+            best choice for low number visitors
+          </h2>
+        </div>
+        <div class="flex flex-wrap -m-4">
+          <div class="p-1 md:w-2/4 lg:w-1/3">
+            <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+              <div class="flex items-center mb-3">
+                <div
+                  class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-400 text-white flex-shrink-0"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20.25 13.2075V11.25C20.25 9.06196 19.3808 6.96354 17.8336 5.41637C16.2864 3.86919 14.188 3 12 3C9.81193 3 7.71351 3.86919 6.16634 5.41637C4.61916 6.96354 3.74997 9.06196 3.74997 11.25V13.2075C2.92849 13.6304 2.27277 14.3169 1.88793 15.1569C1.50308 15.9968 1.41138 16.9417 1.62753 17.84C1.84368 18.7383 2.35515 19.5381 3.07998 20.111C3.80481 20.684 4.70102 20.9971 5.62497 21H5.99997C6.39779 21 6.77932 20.842 7.06063 20.5607C7.34193 20.2794 7.49997 19.8978 7.49997 19.5V14.25C7.49997 13.8522 7.34193 13.4706 7.06063 13.1893C6.77932 12.908 6.39779 12.75 5.99997 12.75H5.62497H5.24997V11.25C5.24997 9.45979 5.96112 7.7429 7.22699 6.47703C8.49287 5.21116 10.2098 4.5 12 4.5C13.7902 4.5 15.5071 5.21116 16.7729 6.47703C18.0388 7.7429 18.75 9.45979 18.75 11.25V12.75H18.375H18C17.6021 12.75 17.2206 12.908 16.9393 13.1893C16.658 13.4706 16.5 13.8522 16.5 14.25V19.5H14.25V18.75C14.25 18.5511 14.1709 18.3603 14.0303 18.2197C13.8896 18.079 13.6989 18 13.5 18H12C11.8011 18 11.6103 18.079 11.4696 18.2197C11.329 18.3603 11.25 18.5511 11.25 18.75V20.25C11.25 20.4489 11.329 20.6397 11.4696 20.7803C11.6103 20.921 11.8011 21 12 21H18.375C19.2989 20.9971 20.1951 20.684 20.9199 20.111C21.6448 19.5381 22.1563 18.7383 22.3724 17.84C22.5886 16.9417 22.4969 15.9968 22.112 15.1569C21.7272 14.3169 21.0714 13.6304 20.25 13.2075V13.2075ZM5.99997 14.25V19.5H5.62497C4.92877 19.5 4.26109 19.2234 3.76881 18.7312C3.27653 18.2389 2.99997 17.5712 2.99997 16.875C2.99997 16.1788 3.27653 15.5111 3.76881 15.0188C4.26109 14.5266 4.92877 14.25 5.62497 14.25H5.99997ZM18.375 19.5H18V14.25H18.375C19.0712 14.25 19.7388 14.5266 20.2311 15.0188C20.7234 15.5111 21 16.1788 21 16.875C21 17.5712 20.7234 18.2389 20.2311 18.7312C19.7388 19.2234 19.0712 19.5 18.375 19.5V19.5Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="text-gray-900 text-base title-font font-semibold">
+                  24/7 Proffesional support
+                </h2>
+              </div>
+              <div class="flex-grow">
+                <p class="leading-relaxed text-base">
+                  Blue 4ottle crucifix vinyl post-ironic four dollar toast vegan taxidermy.
+                  Gastropub indxgo juice poutine.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="p-1 md:w-2/4 lg:w-1/3">
+            <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+              <div class="flex items-center mb-3">
+                <div
+                  class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-400 text-white flex-shrink-0"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M15.9756 17.2432L18.6422 19.9099C19.1467 20.4144 19.7954 20.4144 20.2999 19.9099L23.0386 17.2432C24.0476 16.2342 22.8224 14.9369 21.7413 16.018L20.2999 17.4595V4.41441C20.2999 4.05405 20.0116 3.76576 19.5792 3.76576H10.1377V5.35135H18.7143V17.5315L17.2008 16.018C16.1918 14.9369 14.8945 16.2342 15.9756 17.2432ZM0.984586 6.79279L3.65125 4.12612C4.15576 3.62162 4.80441 3.62162 5.38098 4.12612L8.04765 6.79279C9.05666 7.87387 7.83143 9.09909 6.75035 8.09008L5.30891 6.57657V18.7568H13.8855V20.3423H4.44405C4.01161 20.3423 3.72332 19.982 3.72332 19.6216V6.57657L2.20981 8.09008C1.2008 9.09909 -0.0964954 7.87387 0.984586 6.79279Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="text-gray-900 text-lg title-font font-semibold">99.99% Uptime</h2>
+              </div>
+              <div class="flex-grow">
+                <p class="leading-relaxed text-base">
+                  Blue 4ottle crucifix vinyl post-ironic four dollar toast vegan taxidermy.
+                  Gastropub indxgo juice poutine.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="p-1 md:w-2/4 lg:w-1/3">
+            <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+              <div class="flex items-center mb-3">
+                <div
+                  class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-400 text-white flex-shrink-0"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 1.5C8.53123 1.5 5.70935 4.25156 5.70935 7.72031C5.70935 8.48906 5.87341 9.32813 6.16873 10.0828H6.16404L6.19216 10.1391C6.2156 10.1906 6.23904 10.2422 6.26248 10.2938L12 22.5L17.7093 10.3547L17.7375 10.2984C17.7609 10.2469 17.789 10.1953 17.8125 10.1391L17.8312 10.0875C18.1359 9.33281 18.2906 8.53594 18.2906 7.72969C18.2906 4.25156 15.4687 1.5 12 1.5ZM12 9.69844C10.7859 9.69844 9.80154 8.71406 9.80154 7.5C9.80154 6.28594 10.7859 5.30156 12 5.30156C13.214 5.30156 14.1984 6.28594 14.1984 7.5C14.1984 8.71406 13.214 9.69844 12 9.69844Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="text-gray-900 text-lg title-font font-semibold">Location choice</h2>
+              </div>
+              <div class="flex-grow">
+                <p class="leading-relaxed text-base">
+                  Blue 4ottle crucifix vinyl post-ironic four dollar toast vegan taxidermy.
+                  Gastropub indxgo juice poutine.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="p-1 md:w-2/4 lg:w-1/3">
+            <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+              <div class="flex items-center mb-3">
+                <div
+                  class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-400 text-white flex-shrink-0"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22.9569 12.0575C23.0548 12.1569 23.1276 12.2782 23.1694 12.4113C23.2111 12.5444 23.2205 12.6856 23.1969 12.8231L22.5993 16.4711C22.5692 16.6512 22.4837 16.8174 22.3546 16.9465C22.2255 17.0756 22.0593 17.1611 21.8793 17.1911C21.8329 17.195 21.7864 17.195 21.7401 17.1911C21.4959 17.1913 21.2615 17.0956 21.0873 16.9247L20.4009 16.2383L15.8073 20.8415C15.7003 20.9485 15.5732 21.0335 15.4334 21.0914C15.2936 21.1493 15.1438 21.1791 14.9925 21.1791C14.8411 21.1791 14.6913 21.1493 14.5515 21.0914C14.4117 21.0335 14.2846 20.9485 14.1777 20.8415L11.8473 18.5111L6.92725 23.4239C6.71115 23.64 6.41806 23.7614 6.11245 23.7614C5.80684 23.7614 5.51375 23.64 5.29765 23.4239C5.08155 23.2078 4.96015 22.9147 4.96015 22.6091C4.96015 22.3035 5.08155 22.0104 5.29765 21.7943L11.0265 16.0679C11.1334 15.9609 11.2605 15.876 11.4003 15.818C11.5401 15.7601 11.6899 15.7303 11.8413 15.7303C11.9926 15.7303 12.1424 15.7601 12.2822 15.818C12.422 15.876 12.5491 15.9609 12.6561 16.0679L14.9865 18.3983L18.7737 14.6111L18.0801 13.9223C17.9874 13.8327 17.9152 13.7241 17.8684 13.6039C17.8216 13.4838 17.8013 13.355 17.8089 13.2263C17.8224 13.0285 17.9022 12.8411 18.0355 12.6943C18.1688 12.5475 18.3477 12.45 18.5433 12.4175L22.1913 11.8151C22.2388 11.807 22.287 11.803 22.3353 11.8031C22.5679 11.8025 22.7914 11.8939 22.9569 12.0575V12.0575ZM5.34325 18.8567L6.20725 18.0023L7.04005 17.1695C7.22512 16.9909 7.33757 16.7501 7.35574 16.4936C7.37391 16.237 7.29651 15.9828 7.13845 15.7799C7.04882 15.6708 6.93737 15.5817 6.81126 15.5182C6.68514 15.4547 6.54714 15.4183 6.40612 15.4113C6.2651 15.4043 6.12417 15.4268 5.99238 15.4775C5.86059 15.5282 5.74085 15.6058 5.64085 15.7055L4.76725 16.5623C3.76227 15.2925 3.13217 13.7672 2.94805 12.1583H4.23445C4.50306 12.1583 4.76067 12.0516 4.95061 11.8617C5.14055 11.6717 5.24725 11.4141 5.24725 11.1455C5.24725 10.8769 5.14055 10.6193 4.95061 10.4294C4.76067 10.2394 4.50306 10.1327 4.23445 10.1327H2.96005C3.14056 8.52505 3.76647 6.99976 4.76725 5.72871L5.63125 6.59271C5.73125 6.69239 5.85099 6.77006 5.98278 6.82074C6.11457 6.87141 6.2555 6.89397 6.39652 6.88696C6.53754 6.87996 6.67554 6.84354 6.80166 6.78005C6.92777 6.71657 7.03922 6.62741 7.12885 6.51831C7.28623 6.31558 7.36323 6.06189 7.34507 5.80588C7.32691 5.54988 7.21487 5.30959 7.03045 5.13111L6.20725 4.29831C7.47696 3.29322 9.00237 2.66311 10.6113 2.47911V3.70071C10.6113 3.96932 10.718 4.22693 10.9079 4.41687C11.0978 4.60681 11.3554 4.71351 11.6241 4.71351C11.8927 4.71351 12.1503 4.60681 12.3402 4.41687C12.5301 4.22693 12.6369 3.96932 12.6369 3.70071V2.47911L12.9729 2.52471C14.7874 2.82388 16.4599 3.69208 17.7489 5.00391L17.7873 5.04231C18.9357 6.1674 19.7463 7.59154 20.1273 9.15351L20.1393 9.20631C20.1984 9.47916 20.3595 9.71911 20.5897 9.87705C20.8199 10.035 21.1018 10.099 21.3777 10.0559C21.5267 10.0277 21.6684 9.96938 21.7942 9.88461C21.9201 9.79985 22.0273 9.69038 22.1095 9.56287C22.1916 9.43535 22.247 9.29245 22.2722 9.14286C22.2974 8.99326 22.2919 8.84011 22.2561 8.69271C21.8759 7.04701 21.1187 5.51208 20.0442 4.20887C18.9697 2.90566 17.6073 1.86978 16.0642 1.18285C14.5212 0.49592 12.8397 0.176708 11.1523 0.250369C9.46482 0.32403 7.81755 0.788552 6.34023 1.60733C4.86291 2.42611 3.59591 3.57677 2.63908 4.96865C1.68224 6.36054 1.0617 7.9556 0.826369 9.62817C0.591034 11.3007 0.747327 13.0051 1.28293 14.607C1.81854 16.2089 2.71883 17.6645 3.91285 18.8591C4.10303 19.0481 4.36041 19.154 4.62855 19.1536C4.89669 19.1531 5.15371 19.0464 5.34325 18.8567ZM16.6641 6.13671C16.4963 5.96701 16.2714 5.86587 16.0331 5.853C15.7948 5.84014 15.5603 5.91647 15.3753 6.06711L11.9673 8.79591C11.487 8.73043 10.9982 8.81311 10.5661 9.0329C10.1341 9.25268 9.77946 9.59909 9.5496 10.0258C9.31973 10.4526 9.22559 10.9393 9.27977 11.421C9.33395 11.9027 9.53386 12.3563 9.85279 12.7214C10.1717 13.0864 10.5945 13.3454 11.0645 13.4637C11.5346 13.582 12.0295 13.554 12.4833 13.3835C12.937 13.2129 13.3279 12.908 13.6036 12.5094C13.8794 12.1107 14.0269 11.6374 14.0265 11.1527C14.0258 11.0451 14.0178 10.9376 14.0025 10.8311L16.7337 7.44231C16.886 7.25648 16.9632 7.02025 16.9499 6.7803C16.9365 6.54034 16.8337 6.31411 16.6617 6.14631L16.6641 6.13671Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="text-gray-900 text-base title-font font-semibold">
+                  Optimized for Speed &amp; Performance
+                </h2>
+              </div>
+              <div class="flex-grow">
+                <p class="leading-relaxed text-base">
+                  Blue 4ottle crucifix vinyl post-ironic four dollar toast vegan taxidermy.
+                  Gastropub indxgo juice poutine.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="p-1 md:w-2/4 lg:w-1/3">
+            <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+              <div class="flex items-center mb-3">
+                <div
+                  class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-400 text-white flex-shrink-0"
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-5 h-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                  </svg>
+                </div>
+                <h2 class="text-gray-900 text-lg title-font font-semibold">Live Monitoring</h2>
+              </div>
+              <div class="flex-grow">
+                <p class="leading-relaxed text-base">
+                  Blue 4ottle crucifix vinyl post-ironic four dollar toast vegan taxidermy.
+                  Gastropub indxgo juice poutine.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="p-1 md:w-2/4 lg:w-1/3">
+            <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+              <div class="flex items-center mb-3">
+                <div
+                  class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-400 text-white flex-shrink-0"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18.1314 10.8188L16.6689 7.91254H7.31265L5.8689 10.8188V10.875H18.1314V10.8188Z"
+                    ></path>
+                    <path
+                      d="M6.7314 12.1312C7.0689 12.1312 7.3314 11.9437 7.4814 11.6812C7.6314 11.9437 7.91265 12.1312 8.2314 12.1312C8.5689 12.1312 8.8314 11.9437 8.9814 11.6812C9.1314 11.9437 9.4314 12.1312 9.75015 12.1312C10.0876 12.1312 10.3314 11.9437 10.5189 11.6812C10.6126 11.9437 10.9314 12.1312 11.2689 12.1312C11.6064 12.1312 11.8126 11.9437 12.0189 11.6812C12.1126 11.9437 12.4314 12.1312 12.7689 12.1312C13.1064 12.1312 13.3126 11.9437 13.5189 11.6812C13.6126 11.9437 13.9314 12.1312 14.2689 12.1312C14.6064 12.1312 14.9251 11.9437 15.0189 11.6812C15.1126 11.9437 15.4314 12.1312 15.7501 12.1312C16.0876 12.1312 16.3501 11.9437 16.5001 11.6812C16.6501 11.9437 16.9314 12.1312 17.2501 12.1312C17.7189 12.1312 18.0939 11.7562 18.1126 11.2875H5.8689C5.88765 11.7562 6.26265 12.1312 6.7314 12.1312Z"
+                    ></path>
+                    <path
+                      d="M17.0252 12.5437C16.8564 12.5062 16.6876 12.4312 16.5376 12.3375C16.5001 12.3562 16.4814 12.375 16.4627 12.375V17.3812H7.53765V12.375C7.5189 12.3562 7.50015 12.3562 7.50015 12.3375C7.35015 12.45 7.1814 12.525 6.9939 12.5625V18.1312H17.0252V17.3812V12.5437Z"
+                    ></path>
+                    <path
+                      d="M22.8751 2.45624H1.12505C0.562549 2.45624 0.112549 2.90624 0.112549 3.46874V5.79374V20.5312C0.112549 21.0937 0.562549 21.5437 1.12505 21.5437H22.8751C23.4376 21.5437 23.8876 21.0937 23.8876 20.5312V5.79374V3.46874C23.8688 2.90624 23.4188 2.45624 22.8751 2.45624ZM6.3938 3.61874C6.52505 3.48749 6.71255 3.41249 6.90005 3.41249C7.08755 3.41249 7.27505 3.48749 7.4063 3.61874C7.53755 3.74999 7.61255 3.93749 7.61255 4.12499C7.61255 4.31249 7.53755 4.49999 7.4063 4.63124C7.27505 4.76249 7.08755 4.83749 6.90005 4.83749C6.6938 4.83749 6.52505 4.76249 6.3938 4.61249C6.26255 4.49999 6.18755 4.31249 6.18755 4.12499C6.18755 3.93749 6.26255 3.74999 6.3938 3.61874ZM3.9938 3.61874C4.12505 3.48749 4.31255 3.41249 4.50005 3.41249C4.68755 3.41249 4.87505 3.48749 5.0063 3.61874C5.13755 3.74999 5.21255 3.93749 5.21255 4.12499C5.21255 4.31249 5.13755 4.49999 5.0063 4.63124C4.87505 4.78124 4.68755 4.85624 4.50005 4.85624C4.2938 4.85624 4.12505 4.78124 3.9938 4.63124C3.86255 4.49999 3.7688 4.31249 3.7688 4.12499C3.7688 3.93749 3.86255 3.74999 3.9938 3.61874ZM1.5938 3.61874C1.72505 3.48749 1.91255 3.41249 2.10005 3.41249C2.28755 3.41249 2.47505 3.48749 2.6063 3.61874C2.73755 3.74999 2.81255 3.93749 2.81255 4.12499C2.81255 4.31249 2.73755 4.49999 2.6063 4.63124C2.47505 4.76249 2.28755 4.83749 2.10005 4.83749C1.8938 4.83749 1.72505 4.76249 1.5938 4.61249C1.46255 4.49999 1.3688 4.31249 1.3688 4.12499C1.3688 3.93749 1.46255 3.74999 1.5938 3.61874ZM22.5563 20.2312H1.42505V5.79374H22.5563V20.2312Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="text-gray-900 text-lg title-font font-semibold">
+                  CMS &amp; E-commerce friendly hosting
+                </h2>
+              </div>
+              <div class="flex-grow">
+                <p class="leading-relaxed text-base">
+                  Blue 4ottle crucifix vinyl post-ironic four dollar toast vegan taxidermy.
+                  Gastropub indxgo juice poutine.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="p-1 md:w-2/4 lg:w-1/3">
+            <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+              <div class="flex items-center mb-3">
+                <div
+                  class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-400 text-white flex-shrink-0"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M13.6719 3.0049C14.8108 3.0049 15.9501 3.0049 17.089 3.0049C17.8339 3.0049 18.6241 2.96601 19.2376 3.10738C20.7242 3.44969 21.8848 4.19737 22.6856 5.22814C23.1104 5.77524 23.4791 6.4178 23.7086 7.15427C23.8116 7.48537 23.8779 7.831 23.9439 8.19941C24.1054 9.10055 23.8856 10.0628 23.6881 10.7299C23.0978 12.7256 21.899 14.0628 20.0459 14.7871C18.6362 15.3383 16.2744 15.1543 14.3369 15.1561C14.3369 15.1526 14.3369 15.1492 14.3369 15.1457C14.5278 14.4389 14.7188 13.7319 14.9097 13.025C15.0138 12.6776 15.0586 12.3106 15.227 12.0312C15.3845 11.77 15.6185 11.5515 15.8818 11.396C16.2812 11.1598 16.9506 11.2012 17.5904 11.2013C17.7745 11.1978 17.9588 11.1945 18.1429 11.191C18.8203 11.0687 19.3289 10.7389 19.6365 10.2485C19.7684 10.0383 19.8656 9.78096 19.9333 9.51083C20.0564 9.01944 19.9079 8.50616 19.7593 8.16858C19.1115 6.69652 17.6452 6.94528 15.6056 6.94948C14.8178 9.88274 14.0298 12.817 13.2422 15.7503C12.9063 16.8688 12.8209 18.3025 11.9223 18.8649C11.4938 19.1331 10.7796 19.0903 10.0705 19.0903C9.47364 19.0903 8.8768 19.0903 8.27995 19.0903C9.31668 15.2111 10.3536 11.3306 11.3903 7.45138C11.6051 6.64554 11.82 5.83935 12.0348 5.03351C12.1937 4.50131 12.2682 3.97804 12.5668 3.59912C12.7527 3.3635 13.0465 3.16589 13.365 3.06639C13.4673 3.04589 13.5696 3.02539 13.6719 3.0049V3.0049ZM5.77344 6.95965C7.36252 6.95965 8.95195 6.95965 10.541 6.95965C10.541 6.96315 10.541 6.96648 10.541 6.96998C10.3706 7.61185 10.2001 8.25407 10.0295 8.89611C9.76339 9.78797 9.69858 10.429 8.88363 10.7812C8.31797 11.0258 7.27248 10.9146 6.49975 10.9144C6.29864 10.9144 6.09735 10.9144 5.89624 10.9144C4.90944 11.0791 4.26564 11.6249 4.03405 12.5333C3.93788 12.9104 3.98255 13.3668 4.0852 13.691C4.35341 14.5368 4.92801 15.007 5.88591 15.1662C6.5304 15.2735 7.42383 14.997 7.84007 15.3201C8.20865 15.6061 8.15644 16.0225 8.01402 16.4982C7.77875 17.3657 7.54331 18.2332 7.30804 19.1005C6.46576 19.1101 5.51434 19.1625 4.80153 19.0083C2.57198 18.5261 1.12199 17.1933 0.361176 15.2381C0.0113363 14.339 -0.131088 12.9111 0.146226 11.8057C0.306343 11.1681 0.494663 10.5425 0.790896 10.0334C1.55329 8.72286 2.58547 7.85553 4.0852 7.27725C4.41893 7.14867 4.79557 7.08035 5.17992 7.01097C5.3777 6.99381 5.57566 6.97681 5.77344 6.95965V6.95965Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="text-gray-900 text-base title-font font-semibold">
+                  cPanel Control Panel
+                </h2>
+              </div>
+              <div class="flex-grow">
+                <p class="leading-relaxed text-base">
+                  Blue 4ottle crucifix vinyl post-ironic four dollar toast vegan taxidermy.
+                  Gastropub indxgo juice poutine.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="p-1 md:w-2/4 lg:w-1/3">
+            <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+              <div class="flex items-center mb-3">
+                <div
+                  class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-400 text-white flex-shrink-0"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.344 6.16802H11.136V11.352C11.52 11.64 11.88 11.976 12.192 12.384C12.384 12.12 12.6 11.904 12.84 11.688V6.16802H13.632C13.872 6.16802 13.992 5.90402 13.872 5.71202L12.24 3.45602C12.12 3.31202 11.88 3.31202 11.784 3.45602L10.128 5.71202C9.98401 5.90402 10.104 6.16802 10.344 6.16802Z"
+                    ></path>
+                    <path
+                      d="M15.4801 6.16802H16.2721V10.344C16.3201 10.344 16.3441 10.344 16.3921 10.344C16.9441 10.344 17.4721 10.44 18.0001 10.584V6.16802H18.7921C19.0321 6.16802 19.1521 5.90402 19.0321 5.71202L17.3761 3.45602C17.2561 3.31202 17.0401 3.31202 16.9201 3.45602L15.2641 5.71202C15.0961 5.90402 15.2401 6.16802 15.4801 6.16802Z"
+                    ></path>
+                    <path
+                      d="M5.23203 6.16802H6.02403V10.728C6.55203 10.512 7.12803 10.368 7.75203 10.344V6.16802H8.54403C8.78403 6.16802 8.90403 5.90402 8.78403 5.71202L7.12803 3.45602C7.00803 3.31202 6.76803 3.31202 6.67203 3.45602L5.01603 5.71202C4.84803 5.90402 4.99203 6.16802 5.23203 6.16802Z"
+                    ></path>
+                    <path
+                      d="M10.896 13.032C10.176 12.24 9.14398 11.76 8.01598 11.76C6.33598 11.76 4.91998 12.816 4.36798 14.304C4.19998 14.28 4.00798 14.256 3.81598 14.256C2.03998 14.256 0.599976 15.696 0.599976 17.472C0.599976 19.248 2.03998 20.664 3.81598 20.664H8.87998C8.06398 19.848 7.58398 18.696 7.58398 17.472C7.55998 15.36 8.97598 13.584 10.896 13.032Z"
+                    ></path>
+                    <path
+                      d="M20.4481 14.76C20.3521 14.76 20.2561 14.76 20.1841 14.784C19.7761 13.032 18.2401 11.76 16.3681 11.76C14.6881 11.76 13.2721 12.816 12.7201 14.304C12.5521 14.28 12.3601 14.256 12.1921 14.256C10.4161 14.256 8.97607 15.696 8.97607 17.472C8.97607 19.248 10.4161 20.688 12.1921 20.688H20.4721C22.1041 20.688 23.4241 19.368 23.4241 17.736C23.4001 16.08 22.0801 14.76 20.4481 14.76Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="text-gray-900 text-lg title-font font-semibold">Beyond Experienced</h2>
+              </div>
+              <div class="flex-grow">
+                <p class="leading-relaxed text-base">
+                  Blue 4ottle crucifix vinyl post-ironic four dollar toast vegan taxidermy.
+                  Gastropub indxgo juice poutine.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="p-1 md:w-2/4 lg:w-1/3">
+            <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+              <div class="flex items-center mb-3">
+                <div
+                  class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-400 text-white flex-shrink-0"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/"
+                  >
+                    <path
+                      d="M13.6388 6.7174C13.36 6.7366 13.1014 6.93362 13.0088 7.1974L9.64884 16.3174C9.51722 16.6708 9.71911 17.1121 10.0726 17.2437C10.426 17.3753 10.8673 17.1734 10.9988 16.8199L14.3588 7.6999C14.4476 7.47481 14.4128 7.20527 14.2698 7.0101C14.1268 6.81493 13.8802 6.70055 13.6388 6.7174ZM8.66635 7.4374C8.51488 7.43236 8.37072 7.50418 8.25386 7.5649L2.97386 10.9249C2.77053 11.0543 2.64038 11.2914 2.64038 11.5324C2.64038 11.7734 2.77053 12.0105 2.97386 12.1399L8.25386 15.4999C8.57189 15.7123 9.05625 15.6102 9.26145 15.2874C9.46663 14.9647 9.35361 14.4828 9.02635 14.2849L4.69884 11.5324L9.02635 8.77991C9.29731 8.6223 9.44097 8.27373 9.3598 7.97096C9.27861 7.6682 8.97981 7.43829 8.66635 7.4374V7.4374ZM15.3413 7.4449C15.0312 7.44797 14.7365 7.67476 14.6542 7.97382C14.5719 8.27288 14.7089 8.61853 14.9739 8.77988L19.3013 11.5324L14.9739 14.2849C14.6466 14.4828 14.5336 14.9647 14.7388 15.2874C14.944 15.6102 15.4283 15.7123 15.7463 15.4999L21.0263 12.1399C21.2297 12.0105 21.3598 11.7734 21.3598 11.5324C21.3598 11.2914 21.2297 11.0543 21.0263 10.9249L15.7463 7.5649C15.6273 7.4859 15.4842 7.44352 15.3413 7.4449V7.4449Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="text-gray-900 text-lg title-font font-semibold">Script library</h2>
+              </div>
+              <div class="flex-grow">
+                <p class="leading-relaxed text-base">
+                  Blue 4ottle crucifix vinyl post-ironic four dollar toast vegan taxidermy.
+                  Gastropub indxgo juice poutine.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Tailwind CSS -->
+
+    <script src="dist/js/main.js"></script>
+  </body>
 </html>
